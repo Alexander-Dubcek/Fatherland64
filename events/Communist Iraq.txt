@@ -1,0 +1,43 @@
+###########################
+# Communist Iraq Events	  #
+###########################
+
+add_namespace = commieiraq
+
+#  Test
+country_event = {
+	id = commieiraq.1
+	title = commieiraq.1.t
+	desc = commieiraq.1.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = ICP
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = commieiraq.1.a
+	
+	}
+}
+
+country_event = {
+	id = commieiraq.2
+	title = commieiraq.2.t
+	desc = commieiraq.2.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = ICP
+		owns_state = 808
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = commieiraq.2.a
+	
+	}
+}

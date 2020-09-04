@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Liwa Almilishia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Liwa Almilishia"
+		location = 2097
+		division_template = "Liwa Almilishia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2. Liwa Almilishia"
+		location = 4951
+		division_template = "Liwa Almilishia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3. Liwa Almilishia"
+		location = 10744
+		division_template = "Liwa Almilishia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "1. Fadayiyu Saddam"
+		location = 1600
+		division_template = "Liwa Almilishia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2. Fadayiyu Saddam"
+		location = 8123
+		division_template = "Liwa Almilishia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}

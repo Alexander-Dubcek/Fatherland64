@@ -1,0 +1,11 @@
+war_against_soviets_mos = {
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		tag = MOS
+	}	
+	
+	visible = {
+		tag = MOS
+	}
+}

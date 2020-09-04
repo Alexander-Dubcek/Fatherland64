@@ -1,0 +1,23 @@
+state = {
+
+	id=832
+	name="STATE_832"
+	manpower = 645321
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = GMA
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = COG
+		add_core_of = GMA
+	}
+
+	provinces = {	 
+		13281 13280
+	}
+}

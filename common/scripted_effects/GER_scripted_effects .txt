@@ -1,0 +1,13 @@
+give_SOV_armor_research_bonuses = {
+	add_tech_bonus = {
+		name = med_armor_bonus
+		ahead_reduction = 2
+		category = cat_medium_armor
+	}
+	add_tech_bonus = {
+		name = armor_bonus
+		bonus = 1.0
+		uses = 1
+		category = armor
+	}
+}

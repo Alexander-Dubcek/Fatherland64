@@ -1,0 +1,405 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = geur
+
+# RLA Preparing for Raid
+country_event = {
+	id = geur.1
+	title = geur.1.t
+	desc = geur.1.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+	name = geur.1.a
+
+	}
+}
+
+# RLA Attack successful
+country_event = {
+	id = geur.2
+	title = geur.2.t
+	desc = geur.2.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.2.a
+		LOK = { add_state_core = 582 }
+		LOK = { transfer_state = 582 }
+	}
+}
+
+# RLA Attack Failed
+country_event = {
+	id = geur.3
+	title = geur.3.t
+	desc = geur.3.d
+	picture = GFX_Attack_Failed
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.3.a
+
+	}
+}
+
+# SOV Attack Repelled
+country_event = {
+	id = geur.4
+	title = geur.4.t
+	desc = geur.4.d
+	picture = GFX_Attack_Failed
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+	name = geur.4.a
+
+	}
+}
+
+# SOV State lost
+country_event = {
+	id = geur.5
+	title = geur.5.t
+	desc = geur.5.d
+	picture = GFX_Defense_Failed
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+	name = geur.5.a
+
+	}
+}
+
+# Kustanay Taken
+country_event = {
+	id = geur.6
+	title = geur.6.t
+	desc = geur.6.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.6.a
+		LOK = { add_state_core = 583 }
+		LOK = { transfer_state = 583 }
+	}
+}
+
+# Chelyabinsk Taken
+country_event = {
+	id = geur.7
+	title = geur.7.t
+	desc = geur.7.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.7.a
+		LOK = { add_state_core = 572 }
+		LOK = { transfer_state = 572 }
+	}
+}
+
+# Akmolinsk Taken
+country_event = {
+	id = geur.8
+	title = geur.8.t
+	desc = geur.8.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.8.a
+		LOK = { add_state_core = 590 }
+		LOK = { transfer_state = 590 }
+	}
+}
+
+# Zlatoust Taken
+country_event = {
+	id = geur.9
+	title = geur.9.t
+	desc = geur.9.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = LOK
+	}
+
+	option = {
+	name = geur.9.a
+		LOK = { add_state_core = 573 }
+		LOK = { transfer_state = 573 }
+	}
+}
+
+# Soviet Union Collapses, Prov and germans move in
+country_event = {
+	id = geur.10
+	title = geur.10.t
+	desc = geur.10.d
+	picture = GFX_Soviets_Collapse
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+			tag = GER
+			LOK = { owns_state = 582 }
+			LOK = { owns_state = 583 }
+			LOK = { owns_state = 590 }
+			LOK = { owns_state = 572 }
+			LOK = { owns_state = 573 }
+			
+			MOS = { owns_state = 581 }
+			MOS = { owns_state = 579 }
+			MOS = { owns_state = 580 }
+			MOS = { owns_state = 653 }
+	}
+
+	option = {
+	name = geur.10.a
+		LOK = { add_state_core = 582 }
+		LOK = { add_state_core = 583 }
+		LOK = { add_state_core = 590 }
+		LOK = { add_state_core = 572 }
+		LOK = { add_state_core = 573 }
+		LOK = { add_state_core = 581 }
+		LOK = { add_state_core = 653 }
+		LOK = { add_state_core = 580 }
+		LOK = { add_state_core = 579 }
+		
+		RKT = { add_state_core = 406 }
+		RKT = { add_state_core = 402 }
+		RKT = { add_state_core = 404 }
+		RKT = { add_state_core = 589 }
+		RKT = { add_state_core = 585 }
+		RKT = { add_state_core = 405 }
+		RKT = { add_state_core = 742 }
+		RKT = { add_state_core = 732 }
+		RKT = { add_state_core = 586 }
+		RKT = { add_state_core = 584 }
+		RKT = { add_state_core = 587 }
+		
+		RKT = { transfer_state = 406 }
+		RKT = { transfer_state = 402 }
+		RKT = { transfer_state = 404 }
+		RKT = { transfer_state = 589 }
+		RKT = { transfer_state = 585 }
+		RKT = { transfer_state = 405 }
+		RKT = { transfer_state = 742 }
+		RKT = { transfer_state = 732 }
+		RKT = { transfer_state = 586 }
+		RKT = { transfer_state = 584 }
+		RKT = { transfer_state = 587 }
+		
+		LOK = { transfer_state = 582 }
+		LOK = { transfer_state = 583 }
+		LOK = { transfer_state = 590 }
+		LOK = { transfer_state = 572 }
+		LOK = { transfer_state = 573 }
+		LOK = { transfer_state = 581 }
+		LOK = { transfer_state = 653 }
+		LOK = { transfer_state = 580 }
+		LOK = { transfer_state = 579 }
+		LOK = {
+			set_cosmetic_tag = LOK_UNITED
+		}
+	}
+}
+
+# Urals Taken
+country_event = {
+	id = geur.11
+	title = geur.11.t
+	desc = geur.11.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOS
+	}
+
+	option = {
+	name = geur.11.a
+		MOS = { transfer_state = 581 }
+	}
+}
+
+# Soviets Defend Against Attack
+country_event = {
+	id = geur.12
+	title = geur.12.t
+	desc = geur.12.d
+	picture = GFX_Attack_Failed
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOS
+	}
+
+	option = {
+	name = geur.12.a
+
+	}
+}
+
+# Soviets Defend Against Attack
+country_event = {
+	id = geur.13
+	title = geur.13.t
+	desc = geur.13.d
+	picture = GFX_Attack_Failed
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+	name = geur.13.a
+
+	}
+}
+
+# Territory Lost
+country_event = {
+	id = geur.14
+	title = geur.14.t
+	desc = geur.14.d
+	picture = GFX_Defense_Failed
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = {
+	name = geur.14.a
+
+	}
+}
+
+# Sverdlovsk Taken
+country_event = {
+	id = geur.15
+	title = geur.15.t
+	desc = geur.15.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOS
+	}
+
+	option = {
+	name = geur.15.a
+		MOS = { transfer_state = 653 }
+	}
+}
+
+# Salekhard Taken
+country_event = {
+	id = geur.16
+	title = geur.16.t
+	desc = geur.16.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOS
+	}
+
+	option = {
+	name = geur.16.a
+		MOS = { transfer_state = 579 }
+	}
+}
+
+# Tobolsk Taken
+country_event = {
+	id = geur.17
+	title = geur.17.t
+	desc = geur.17.d
+	picture = GFX_POA_Border_Conflict
+	
+	fire_only_once = no
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = MOS
+	}
+
+	option = {
+	name = geur.17.a
+		MOS = { transfer_state = 580 }
+	}
+}

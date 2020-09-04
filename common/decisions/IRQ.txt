@@ -1,0 +1,157 @@
+IRQ_unconventional_means = {
+
+IRQ_construct_mustard_gas = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+days_remove = 15
+
+cost = 10
+	complete_effect = {
+		add_to_variable = { var = gas value = 1 }
+	}
+}
+
+IRQ_use_the_gas = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+cost = 5
+days_remove = 20
+
+	available = {
+			check_variable = { var = gas value = 2 }
+        }
+		
+	complete_effect = { 
+		set_country_flag = gas_attack 
+		subtract_from_variable = { var = gas value = 2 }
+		subtract_from_variable = { var = kurd_power value = 3 }
+		
+			random_list = {
+				75 = {
+					country_event = iraq.5
+					modifier = {
+                        factor = -3
+                        check_variable = { var = gas value = 3 }
+                    }
+					modifier = {
+                        factor = -5
+                        check_variable = { var = gas value = 6 }
+                    }
+					modifier = {
+                        factor = -6
+                        check_variable = { var = gas value = 8 }
+                    }
+					modifier = {
+                        factor = -10
+                        check_variable = { var = gas value = 11 }
+                    }
+					modifier = {
+                        factor = -15
+                        check_variable = { var = gas value = 16 }
+                    }
+				}
+				25 = {
+					country_event = iraq.6
+				}
+		}
+	}
+}
+
+
+IRQ_kurd_timer = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+cost = 5
+
+days_mission_timeout = 307
+
+	timeout_effect = {
+		country_event = { id = iraq.1 }
+	}
+
+	available = {
+		always = no
+	}
+
+	activation = {
+			has_country_flag = gas_attack
+        }
+	}
+
+
+
+}
+
+IRQ_conventional_means = {
+
+IRQ_launch_raid = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+days_remove = 15
+
+cost = 10
+	complete_effect = {
+		
+	}
+  }
+  
+IRQ_launch_airstrike = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+days_remove = 15
+
+cost = 10
+	complete_effect = {
+		
+	}
+  }
+  
+IRQ_infiltrate_kurds = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+days_remove = 15
+
+cost = 10
+	complete_effect = {
+		
+	}
+  }
+  
+IRQ_kurd_timer = {
+
+icon = eng_propaganda_campaigns
+
+picture = generic_border_conflicts
+
+cost = 5
+
+days_mission_timeout = 307
+
+	timeout_effect = {
+		country_event = { id = iraq.1 }
+	}
+
+	available = {
+		always = yes
+	}
+
+  }
+}

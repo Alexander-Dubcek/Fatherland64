@@ -1,0 +1,15 @@
+################
+##### SAF ######
+################
+
+angolan_civil_war = {
+	picture = generic_border_conflicts
+	icon = GFX_KKK
+	allowed = {
+		tag = SAF
+	}	
+	
+	visible = {
+		tag = SAF
+	}
+}

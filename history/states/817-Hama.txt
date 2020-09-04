@@ -1,0 +1,25 @@
+
+state={
+	id=817
+	name="STATE_817"
+	manpower = 361209
+	
+	state_category = town
+	
+	history={
+		owner = ITM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SYR
+		add_core_of = ITM
+		victory_points = {
+			1056 1
+		}
+	}
+
+	
+	provinces={
+		1056 1072 12442 13253
+	}
+}

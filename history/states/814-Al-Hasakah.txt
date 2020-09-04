@@ -1,0 +1,22 @@
+
+state={
+	id=814
+	name="STATE_814"
+	manpower = 61209
+	
+	state_category = rural
+	
+	history={
+		owner = ITM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SYR
+		add_core_of = ITM
+	}
+
+	
+	provinces={
+		1634 1578 1549 10882
+	}
+}

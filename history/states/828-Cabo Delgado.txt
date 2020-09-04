@@ -1,0 +1,25 @@
+state = {
+
+	id=828
+	name="STATE_828"
+	manpower = 1445321
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = POR
+		buildings = {
+			infrastructure = 3
+			2123 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MZB
+	}
+
+	provinces = {	 
+		2159 2217 2202 10972 2123
+	}
+}

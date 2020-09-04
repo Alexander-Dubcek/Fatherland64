@@ -1,0 +1,160 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Division Territoriale"		
+	division_names_group = FRA_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	division= {			
+		name = "1er Division d'Infanterie"		
+		location = 5139
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "2e Division d'Infanterie"		
+		location = 3123
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "3e Division d'Infanterie"		
+		location = 1993
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "4e Division d'Infanterie"		
+		location = 1473
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "5e Division d'Infanterie"		
+		location = 5084
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "6e Division d'Infanterie"		
+		location = 3165
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "7e Division d'Infanterie"		
+		location = 5054
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "8e Division d'Infanterie"		
+		location = 8193
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "9e Division d'Infanterie"		
+		location = 6008
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "10e Division d'Infanterie"		
+		location = 11194
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "11e Division d'Infanterie"		
+		location = 12975
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "12e Division d'Infanterie"		
+		location = 5139
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division= {			
+		name = "13e Division d'Infanterie"		
+		location = 9152
+		division_template = "Division Territoriale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+}
+	
+	
+### Air Wings
+air_wings = {
+	539 = { 
+		fighter_equipment_2 = { owner = "FRA" amount = 67 }			
+		heavy_fighter_equipment_1  = { owner = "FRA"  amount = 36 }	# Groupement de Chasse de Nuit -- Potez 631
+		tac_bomber_equipment_2 =  { owner = "FRA" amount = 24 }		# Groupement de Bombardment 6 -- LeO 451
+		tac_bomber_equipment_1 =  { owner = "FRA" amount = 24 }		# Groupement de Bombardment 9 -- Amiot 143
+		CAS_equipment_1 =  { owner = "FRA" amount = 24 }			# Groupement de Bombardment d'Asault 18 -- Br.693
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+}
+###################

@@ -1,0 +1,861 @@
+
+music_station = "fl"
+
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+
+# MIDDLE EAST ######
+
+music = {
+	song = "Saddam Hussein song"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = IRQ
+			has_government = neutrality
+		}		
+	}	
+}
+
+music = {
+	song = "Medal of Honor European Assault OST - Operation Chariot"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = IRQ
+			has_government = neutrality
+		}		
+	}	
+}
+
+music = {
+	song = "The Main Menu Music"
+	
+	chance = {
+		modifier = {
+			factor = 3
+		}		
+	}	
+}
+
+music = {
+	song = "Ali Baba"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			capital_scope = { is_on_continent = middle_east }
+		}		
+	}	
+}
+
+music = {
+	song = "Cobra Desert"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			capital_scope = { is_on_continent = middle_east }
+		}		
+	}	
+}
+
+music = {
+	song = "Sultan's palace"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			capital_scope = { is_on_continent = middle_east }
+		}		
+	}	
+}
+
+music = {
+	song = "Mawtini (Motini)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			capital_scope = { is_on_continent = middle_east }
+		}		
+	}	
+}
+
+music = {
+	song = "Prince of Persia"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			capital_scope = { is_on_continent = middle_east }
+		}		
+	}	
+}
+
+music = {
+	song = "Ba'ath Anthem"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			OR = {
+			    tag = SYR
+				tag = IRQ
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "lak Hubi Wafuaadi (You are my love and my heart)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = EGY
+		}		
+	}	
+}
+
+music = {
+	song = "Ishy Bilady (Take my hand)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = UAE
+		}		
+	}	
+}
+
+music = {
+	song = "Eslami ya Misr (Peace be upon you)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = EGY
+			NOT = { 
+			    has_government = communism
+			} 
+		}		
+	}	
+}
+
+music = {
+	song = "Ardulfurataini Watan (Arzlvarten homeland)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = IRQ
+			has_government = neutrality
+		}		
+	}	
+}
+
+# SOVIETS ####
+
+music = {
+	song = "Defenders of Moscow"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = SOV
+		}		
+	}	
+}
+
+music = {
+	song = "Partisan's song"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = SOV
+		}		
+	}	
+}
+
+music = {
+	song = "Krasnaya Armiya Samaya Silnaya (The Red Army is the Strongest)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = SOV
+		}		
+	}	
+}
+
+music = {
+	song = "Svyashchennaya Voyna (The Sacred War)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = SOV
+		}		
+	}	
+}
+
+music = {
+	song = "Polyushko-polye (Song of the Plains)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = SOV
+		}		
+	}	
+}
+
+# AMERICAN WAR
+
+music = {
+	song = "Over There"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+			has_war = yes 
+		}		
+	}	
+}
+
+music = {
+	song = "USMC Hymn"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+			has_war = yes 
+		}		
+	}	
+}
+
+music = {
+	song = "Johnny Comes Marching Home"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+			has_war = yes 
+		}		
+	}	
+}
+
+# AMERICAN PEACE SONGS 60s #######
+
+music = {
+	song = "House of the Rising Sun (English)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+			has_war = no 
+		}		
+	}	
+}
+
+
+music = {
+	song = "Yankee Doodle"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Stars and Stripes Forever"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Stay"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Civilisation"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			OR = {
+			    tag = USA
+				tag = AST
+				tag = CAN
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Son of a Preacher Man"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Something Stupid"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "These Boots Are Made For Walkin'"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Hit The Road Jack"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Walkin' After Midnight"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Walkin' After Midnight"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "End of the World"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Wanderer"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Star Spangled Banner"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Will You Still Love Me Tomorrow"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "For What It's worth"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Johnny Guitar"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Be My Baby"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Califonia Dreamin'"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Johnny B. Goode"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "High Hopes"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			tag = USA
+		}		
+	}	
+}
+
+music = {
+	song = "Battle Hymn of the Republic"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = USA
+		}		
+	}	
+}
+
+# EUROPEAN PEACE ########
+
+music = {
+	song = "European Anthem"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+			OR = {
+			    has_idea = european_community_member
+				has_idea = european_community_leader
+			}
+		}		
+	}	
+}
+
+# CANADIAN SONGS ########
+
+music = {
+	song = "God Save The King"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = CAN
+			has_government = democratic
+		}		
+	}	
+}
+
+
+# GERMAN SONGS #################
+
+music = {
+	song = "SS Marschiert In Feindesland (SS marches in enemy territory)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+
+music = {
+	song = "Liebe Heist Das (Love)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+			
+		}		
+	}	
+}
+
+music = {
+	song = "Morgen Marschieren Wir (Tomorrow We March)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Deutschlandlied (German Anthem)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Augen Geradeaus (Eyes straight ahead)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Horst-Wessel-Lied (Horst Wessel Song)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Erika"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Grenadier"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "Lore Lore Lore"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			OR = {
+			    has_government = national_socialist
+				has_government = fascism
+			}
+		}		
+	}	
+}
+
+music = {
+	song = "House Of The Rising Sun (German)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Edelweiss (Noble white)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Morgen (Morning)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Mond Mond Ja Ja (Moon Moon Yes Yes)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Nowhere To Run (German)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+
+music = {
+	song = "Du Bist Da (Are You Here)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "Paint It Black (German)"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			tag = GER
+		}		
+	}	
+}
+
+
+
+music = {
+	song = "Paint it Black"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			OR = {
+			    tag = USA
+				tag = ENG
+				tag = AST
+				tag = CAN
+			}
+		}		
+	}	
+}
+

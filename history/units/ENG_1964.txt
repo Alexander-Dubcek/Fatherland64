@@ -1,0 +1,120 @@
+﻿division_template = {
+	name = "Infantry Divison"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		medium_sp_artillery_brigade = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		medium_sp_anti_air_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Mechanized Infantry Division" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		medium_armor = { x = 0 y = 2 }	
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }			
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }	
+		motorized = { x = 2 y = 2 }	
+		medium_sp_artillery_brigade = { x = 3 y = 0 }
+		medium_sp_artillery_brigade = { x = 3 y = 1 }		
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	division_names_group = GER_GAR_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Armored Division" 				
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }	
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }			
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }	
+		medium_sp_artillery_brigade = { x = 2 y = 2 }
+		medium_sp_anti_air_brigade = { x = 3 y = 0 }		
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_air = { x = 0 y = 3 } 	
+	}
+}
+
+division_template = {
+	name = "SAS Brigade"
+	division_names_group = GER_GAR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Marine Brigade"
+	division_names_group = GER_GAR_01
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+	}
+	priority = 0
+}
+
+units = {
+	division= {	
+		name = "1st Infantry Divison"
+		location = 6103
+		division_template = "Infantry Divison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+}

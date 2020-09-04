@@ -1,0 +1,219 @@
+angolan_civil_war = {
+#######################Intervention Tier 1
+	send_guns_UTI = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			NOT = { has_country_flag = angolan_escalation_1 }
+			tag = SAF
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			send_equipment= {
+				target = UTI
+				type = infantry_equipment amount = 500
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	escalate_intervention = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			NOT = { has_country_flag = angolan_escalation_1 }
+			tag = SAF
+		}
+
+		cost = 75
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+			has_country_flag = carbomb
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = angolan_escalation_1
+			add_stability = -0.05
+			add_political_power = -15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+############################Intervention Tier 2
+	send_advisors_UTI = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = angolan_escalation_1
+			NOT = { has_country_flag = angolan_escalation_2 }
+			tag = SAF
+		}
+
+		cost = 35
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			UTI = {
+				add_ideas = SAF_advisors
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	escalate_intervention2 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = angolan_escalation_1
+			NOT = { has_country_flag = angolan_escalation_2 }
+			tag = SAF
+		}
+
+		cost = 85
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = angolan_escalation_2
+			add_stability = -0.1
+			add_political_power = -35
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#############################Intervention Tier 3
+	send_volunteers_UTI = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = angolan_escalation_2
+			NOT = { has_country_flag = angolan_escalation_3 }
+			tag = SAF
+		}
+
+		cost = 100
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			UTI = {
+				country_event = { id = portugal.8 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	escalate_intervention3 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = angolan_escalation_3
+			NOT = { has_country_flag = angolan_escalation_3 }
+			tag = SAF
+		}
+
+		cost = 250
+
+		fire_only_once = no
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = angolan_escalation_3
+			add_stability = -0.15
+			add_political_power = -100
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+##################################Intervention Tier 4
+	fuck_angola = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_country_flag = angolan_escalation_3
+			tag = SAF
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			tag = SAF
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = angolan_escalation_4
+			add_stability = -0.15
+			add_political_power = -75
+			declare_war_on = {
+				target = MPL
+				type = civil_war
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

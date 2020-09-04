@@ -1,0 +1,302 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Hitler's Birthday
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1.a
+		trigger = {
+		
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = { TAG = GER }
+	}
+}
+
+# Nixon Wins Election
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = { TAG = USA }
+	}
+}
+
+# Iraq Implodes
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = IRQ
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = { TAG = IRQ }
+	}
+}
+
+# Hitler is dead
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = { TAG = GER }
+	}
+}
+
+# Mussolini is dead
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.5.a
+		trigger = {
+			NOT = {
+				TAG = ITA
+			}
+		}
+	}
+	option = {
+		name = news.5.b
+		trigger = { TAG = ITA }
+	}
+}
+
+# French Bush War
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.6.a
+		trigger = {
+			NOT = {
+				TAG = IRQ
+			}
+		}
+	}
+	option = {
+		name = news.6.b
+		trigger = { TAG = IRQ }
+	}
+}
+
+# Italian Bush War
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.7.a
+		trigger = {
+			NOT = {
+				TAG = IRQ
+			}
+		}
+	}
+	option = {
+		name = news.7.b
+		trigger = { TAG = IRQ }
+	}
+}
+
+# Congo Crisis
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.8.a
+
+	}
+}
+
+# Hungary Occupy Transylvania 
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.9.a
+		trigger = {
+			NOT = {
+				TAG = ROM
+			}
+		}
+	}
+	option = {
+		name = news.9.b
+		trigger = { TAG = ROM }
+	}
+}
+
+# Kennedy Wins Reelection 
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.10.a
+		trigger = {
+			NOT = {
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.10.b
+		trigger = { TAG = USA }
+	}
+}
+
+# American Race Crisis 
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.11.a
+		trigger = {
+			NOT = {
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = news.11.b
+		trigger = { TAG = USA }
+	}
+}
+
+# Iraqi civil war
+news_event = {
+	id = news.12
+	title = news.12.t
+	desc = news.12.d
+	picture = GFX_Nixon_Elected
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.12.a
+        set_country_flag = Super_Event_Visible
+        set_country_flag = ENG_George_V_Dead
+		trigger = {
+			NOT = {
+				TAG = IRQ
+			}
+		}
+	}
+	option = {
+		name = news.12.b
+        set_country_flag = Super_Event_Visible
+        set_country_flag = ENG_George_V_Dead
+		trigger = { TAG = IRQ }
+	}
+}

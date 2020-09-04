@@ -1,0 +1,2565 @@
+focus_tree = {
+	id = ITA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	#Focus for Seize Factories
+	focus = {
+		id = ITA_seize_factories
+		icon = GFX_goal_unknown
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_revival_of_the_partisans }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Red Brigades
+	focus = {
+		id = ITA_red_brigades
+		icon = GFX_goal_unknown
+		x = 5
+		y = 8
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_bella_ciao 
+			focus = ITA_revival_of_the_partisans 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 12000
+		}
+	}
+
+	#Focus for Overthrow the Fascists
+	focus = {
+		id = ITA_overthrow_the_fascists
+		icon = GFX_goal_unknown
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_biennio_rosso }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			start_civil_war= {
+ ideology = fascism 
+size = 0.3 
+}
+
+set_politics
+= { ruling_party = communism 
+elections_allowed = yes }
+		}
+	}
+
+	#Focus for Expanded Blackshirt Brigades
+	focus = {
+		id = ITA_expanded_blackshirt_brigades
+		icon = GFX_goal_unknown
+		x = 36
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_dino_grandi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_blackshirt_brigades
+		}
+	}
+
+	#Focus for National Syndicalism
+	focus = {
+		id = ITA_national_syndicalism
+		icon = GFX_goal_unknown
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_dino_grandi }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_national_syndicalism
+		}
+	}
+
+	#Focus for Alliance with Socialists?
+	focus = {
+		id = ITA_alliance_with_socialists
+		icon = GFX_goal_unknown
+		x = 11
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_reforming_the_bureaucracy 
+		}
+		prerequisite = { 
+			focus = ITA_defascize_the_military 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen our Presence
+	focus = {
+		id = ITA_strengthen_our_presence
+		icon = GFX_goal_unknown
+		x = 37
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_old_allies_new_treaty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.15
+		}
+	}
+
+	#Focus for Colonial Autonomy
+	focus = {
+		id = ITA_colonial_autonomy
+		icon = GFX_goal_unknown
+		x = 41
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_colonial_difficulties }
+		mutually_exclusive = { focus = ITA_rule_with_an_iron_fist }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_colonial_autonomy
+		}
+	}
+
+	#Focus for Rule with an Iron Fist
+	focus = {
+		id = ITA_rule_with_an_iron_fist
+		icon = GFX_goal_unknown
+		x = 43
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_colonial_difficulties }
+		mutually_exclusive = { focus = ITA_colonial_autonomy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_iron_fist
+		}
+	}
+
+	#Focus for Notes of the Blitz
+	focus = {
+		id = ITA_notes_of_the_blitz
+		icon = GFX_goal_unknown
+		x = 48
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_an_air_force_to_rival_the_luftwaffe 
+		}
+		prerequisite = { 
+			focus = ITA_alpine_fortifications 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Paracadutisti
+	focus = {
+		id = ITA_paracadutisti
+		icon = GFX_goal_unknown
+		x = 31
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_jet_advancements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.25
+uses = 2
+technology = paratroopers
+technology = paratroopers2
+technology = paratroopers3
+}
+		}
+	}
+
+	#Focus for An Air Force to Rival the Luftwaffe
+	focus = {
+		id = ITA_an_air_force_to_rival_the_luftwaffe
+		icon = GFX_goal_unknown
+		x = 47
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_handling_the_german_threat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_expand_air
+		}
+	}
+
+	#Focus for Handling the German Threat
+	focus = {
+		id = ITA_handling_the_german_threat
+		icon = GFX_goal_unknown
+		x = 48
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_american_ties }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.15
+		}
+	}
+
+	#Focus for Alpine Fortifications
+	focus = {
+		id = ITA_alpine_fortifications
+		icon = GFX_goal_unknown
+		x = 49
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_handling_the_german_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expanding the Italian Marines
+	focus = {
+		id = ITA_expanding_the_italian_marines
+		icon = GFX_goal_unknown
+		x = 28
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_a_modern_fleet 
+		}
+		prerequisite = { 
+			focus = ITA_fleet_of_the_old 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.25
+uses = 2
+technology = marines
+technology = marines2
+technology = marines3
+}
+		}
+	}
+
+	#Focus for An Italian Lake
+	focus = {
+		id = ITA_an_italian_lake
+		icon = GFX_goal_unknown
+		x = 28
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_expanding_the_italian_marines }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.5
+uses = 1
+category = ss_tech
+}
+		}
+	}
+
+	#Focus for Fleet of the Old
+	focus = {
+		id = ITA_fleet_of_the_old
+		icon = GFX_goal_unknown
+		x = 29
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_mare_nostrum }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+
+add_tech_bonus = {
+bonus = 0.25
+uses = 2
+technology = basic_battleship
+technology = heavy_battleship
+}
+		}
+	}
+
+	#Focus for The Fourth Shore
+	focus = {
+		id = ITA_the_fourth_shore
+		icon = GFX_goal_unknown
+		x = 42
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_focus_on_the_people 
+		}
+		prerequisite = { 
+			focus = ITA_focus_on_extraction 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Colonial Difficulties
+	focus = {
+		id = ITA_colonial_difficulties
+		icon = GFX_goal_unknown
+		x = 42
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_old_allies_new_treaty 
+			focus = ITA_american_ties 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for Old Allies, New Treaty
+	focus = {
+		id = ITA_old_allies_new_treaty
+		icon = GFX_goal_unknown
+		x = 37
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_spartan_lifestyle }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GER = { country_event = italianevents.11 }
+		}
+	}
+
+	#Focus for Global Trade Agreements
+	focus = {
+		id = ITA_global_trade_agreements
+		icon = GFX_goal_unknown
+		x = 47
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freemarket_corporatism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_trade_fascism
+		}
+	}
+
+	#Focus for American Ties
+	focus = {
+		id = ITA_american_ties
+		icon = GFX_goal_unknown
+		x = 47
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_a_road_to_rival_the_autobahn 
+		}
+		prerequisite = { 
+			focus = ITA_a_bigger_merchant_fleet 
+		}
+		prerequisite = { 
+			focus = ITA_strengthen_blackshirt_influence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ITA = {
+add_opinion_modifier = {
+target = USA
+modifier = large_increase
+                }
+            }
+            USA = {
+                add_opinion_modifier = {
+                    target = ITA
+                    modifier = large_increase
+                }
+            }
+		}
+	}
+
+	#Focus for Process of Decolonization
+	focus = {
+		id = ITA_process_of_decolonization
+		icon = GFX_goal_unknown
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_colonial_issues }
+		mutually_exclusive = { focus = ITA_reinforce_the_colonies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_colonial_autonomy
+		}
+	}
+
+	#Focus for Dissolve the Blackshirts
+	focus = {
+		id = ITA_dissolve_the_blackshirts
+		icon = GFX_goal_unknown
+		x = 14
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_defascize_the_military 
+			focus = ITA_a_true_republic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ITA_Blackshirts
+		}
+	}
+
+	#Focus for Reforming the Party
+	focus = {
+		id = ITA_reforming_the_party
+		icon = GFX_goal_unknown
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_step_son_wins }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+
+add_popularity= { 
+ideology = fascism 
+popularity = 0.1
+}
+		}
+	}
+
+	#Focus for A Cult of Personality
+	focus = {
+		id = ITA_a_cult_of_personality
+		icon = GFX_goal_unknown
+		x = 18
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_a_dictatorship_under_the_sheets }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_cult_of_personality
+		}
+	}
+
+	#Focus for A True Republic
+	focus = {
+		id = ITA_a_true_republic
+		icon = GFX_goal_unknown
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_declaring_a_republic 
+		}
+		prerequisite = { 
+			focus = ITA_sympathetic_advisors 
+		}
+		prerequisite = { 
+			focus = ITA_reforming_the_party 
+		}
+		mutually_exclusive = { focus = ITA_a_dictatorship_under_the_sheets }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics
+= { ruling_party = democratic 
+elections_allowed = yes }
+
+create_country_leader= {
+ name = "Galeazzo Ciano"
+desc = ""
+picture = "portrait_Galeazzo_Ciano.dds" 
+expire = "1965.1.1"
+ideology = conservative
+traits = {
+}
+		}
+	}
+} #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
+
+	#Focus for Ties to Big Businesses
+	focus = {
+		id = ITA_ties_to_big_businesses
+		icon = GFX_goal_unknown
+		x = 10
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_christian_roots 
+		}
+		prerequisite = { 
+			focus = ITA_improved_social_security 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Christian Roots
+	focus = {
+		id = ITA_christian_roots
+		icon = GFX_goal_unknown
+		x = 9
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_move_away_from_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for block
+	focus = {
+		id = ITA_block
+		icon = GFX_goal_unknown
+		x = 67
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reforming Fascism
+	focus = {
+		id = ITA_reforming_fascism
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_end_of_an_era }
+		mutually_exclusive = { focus = ITA_the_council_convenes }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for Release Political Prisoners
+	focus = {
+		id = ITA_release_political_prisoners
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_revoke_the_manifesto_of_race 
+		}
+		prerequisite = { 
+			focus = ITA_combat_blackshirt_influence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 75
+
+add_popularity= { 
+ideology = communism
+popularity = 0.07
+}
+add_popularity= { 
+ideology = democratic 
+popularity = 0.12
+}
+		}
+	}
+
+	#Focus for Combat Blackshirt Influence
+	focus = {
+		id = ITA_combat_blackshirt_influence
+		icon = GFX_goal_unknown
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reforming_fascism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = -0.07
+}
+
+add_stability= 0.05
+		}
+	}
+
+	#Focus for Expel Hardliners
+	focus = {
+		id = ITA_expel_hardliners
+		icon = GFX_goal_unknown
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_combat_blackshirt_influence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = -0.07
+}
+
+add_stability= 0.05
+		}
+	}
+
+	#Focus for Open Elections
+	focus = {
+		id = ITA_open_elections
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_allow_jews_in_the_party 
+		}
+		prerequisite = { 
+			focus = ITA_release_political_prisoners 
+		}
+		prerequisite = { 
+			focus = ITA_expel_hardliners 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.1
+}
+		}
+	}
+
+	#Focus for Reforming the Bureaucracy
+	focus = {
+		id = ITA_reforming_the_bureaucracy
+		icon = GFX_goal_unknown
+		x = 10
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_taxing_the_rich }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ITA_corrupt_bureaucracy
+		}
+	}
+
+	#Focus for A Dictatorship under the Sheets
+	focus = {
+		id = ITA_a_dictatorship_under_the_sheets
+		icon = GFX_goal_unknown
+		x = 18
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_declaring_a_republic 
+		}
+		prerequisite = { 
+			focus = ITA_sympathetic_advisors 
+		}
+		prerequisite = { 
+			focus = ITA_reforming_the_party 
+		}
+		mutually_exclusive = { focus = ITA_a_true_republic }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_dictator
+		}
+	}
+
+	#Focus for Sympathetic Advisors
+	focus = {
+		id = ITA_sympathetic_advisors
+		icon = GFX_goal_unknown
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_step_son_wins }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = ITA_corrupt_bureaucracy
+add_idea = ITA_cianos_bureaucracy
+}
+		}
+	}
+
+	#Focus for The Council Convenes
+	focus = {
+		id = ITA_the_council_convenes
+		icon = GFX_goal_unknown
+		x = 42
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_end_of_an_era }
+		mutually_exclusive = { focus = ITA_reforming_fascism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.5
+}
+		}
+	}
+
+	#Focus for block
+	focus = {
+		id = ITA_VRpKWSUT
+		icon = GFX_goal_unknown
+		x = 15
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The End of An Era
+	focus = {
+		id = ITA_the_end_of_an_era
+		icon = GFX_goal_unknown
+		x = 25
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag= mussolini_dead
+		}
+	}
+
+	#Focus for Revoke the Manifesto of Race
+	focus = {
+		id = ITA_revoke_the_manifesto_of_race
+		icon = GFX_goal_unknown
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reforming_fascism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ITA_manifesto_of_race
+		}
+	}
+
+	#Focus for Allow Jews in the Party
+	focus = {
+		id = ITA_allow_jews_in_the_party
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_revoke_the_manifesto_of_race }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+add_political_power= 50
+
+add_popularity= { 
+ideology = fascism 
+popularity = 0.05
+}
+		}
+	}
+
+	#Focus for The Step Son Wins
+	focus = {
+		id = ITA_the_step_son_wins
+		icon = GFX_goal_unknown
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_open_elections }
+		mutually_exclusive = { 
+			focus = ITA_biennio_rosso 
+		}
+		mutually_exclusive = { 
+			focus = ITA_christian_democrat 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.1
+}
+		}
+	}
+
+	#Focus for Biennio Rosso
+	focus = {
+		id = ITA_biennio_rosso
+		icon = GFX_goal_unknown
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_open_elections }
+		mutually_exclusive = { 
+			focus = ITA_christian_democrat 
+		}
+		mutually_exclusive = { 
+			focus = ITA_the_step_son_wins 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= -0.2
+		}
+	}
+
+	#Focus for Christian Democrat
+	focus = {
+		id = ITA_christian_democrat
+		icon = GFX_goal_unknown
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_open_elections }
+		mutually_exclusive = { 
+			focus = ITA_biennio_rosso 
+			focus = ITA_the_step_son_wins 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = democratic 
+popularity = 0.15
+}
+		}
+	}
+
+	#Focus for Revival of the Partisans
+	focus = {
+		id = ITA_revival_of_the_partisans
+		icon = GFX_goal_unknown
+		x = 6
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_overthrow_the_fascists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = communism
+popularity = 0.15
+}
+		}
+	}
+
+	#Focus for Bella Ciao!
+	focus = {
+		id = ITA_bella_ciao
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_overthrow_the_fascists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 650
+    producer = ITA
+}
+		}
+	}
+
+	#Focus for Seize Armories
+	focus = {
+		id = ITA_seize_armories
+		icon = GFX_goal_unknown
+		x = 3
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_bella_ciao }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Focus for Declaring A Republic
+	focus = {
+		id = ITA_declaring_a_republic
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_christian_democrat 
+			focus = ITA_the_step_son_wins 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.2
+}
+		}
+	}
+
+	#Focus for Taxing the Rich
+	focus = {
+		id = ITA_taxing_the_rich
+		icon = GFX_goal_unknown
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_christian_democrat }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_taxes_bad
+		}
+	}
+
+	#Focus for De-fascize the Military
+	focus = {
+		id = ITA_defascize_the_military
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_taxing_the_rich }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = -0.25
+}
+
+add_stability= 0.05
+		}
+	}
+
+	#Focus for Increase Celibacy Tax
+	focus = {
+		id = ITA_increase_celibacy_tax
+		icon = GFX_goal_unknown
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_a_true_republic 
+			focus = ITA_a_dictatorship_under_the_sheets 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_church_taxation
+		}
+	}
+
+	#Focus for Play Both Sides
+	focus = {
+		id = ITA_play_both_sides
+		icon = GFX_goal_unknown
+		x = 16
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_working_with_the_church 
+			focus = ITA_dissolve_the_papacy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ITA = {
+add_opinion_modifier = {
+target = USA
+modifier = large_increase
+                }
+            }
+            USA = {
+                add_opinion_modifier = {
+                    target = ITA
+                    modifier = large_increase
+                }
+            }
+
+ITA = {
+add_opinion_modifier = {
+target = GER
+modifier = large_increase
+                }
+            }
+            GER = {
+                add_opinion_modifier = {
+                    target = ITA
+                    modifier = large_increase
+                }
+            }
+		}
+	}
+
+	#Focus for Italo Balbo
+	focus = {
+		id = ITA_italo_balbo
+		icon = GFX_goal_unknown
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_council_convenes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dino Grandi
+	focus = {
+		id = ITA_dino_grandi
+		icon = GFX_goal_unknown
+		x = 37
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_council_convenes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Reforms
+	focus = {
+		id = ITA_military_reforms
+		icon = GFX_goal_generic_position_armies
+		x = 25
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			army_experience= 25
+
+add_political_power = 35
+		}
+	}
+
+	#Focus for Mobile Warfare
+	focus = {
+		id = ITA_mobile_warfare
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_reforms }
+		mutually_exclusive = { 
+			focus = ITA_shock_and_awe 
+		}
+		mutually_exclusive = { 
+			focus = ITA_worldclass_infantry 
+		}
+		mutually_exclusive = { 
+			focus = ITA_endless_legions 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = doctrine_bonus
+bonus = 0.5
+uses = 2
+category = cat_mobile_warfare
+}
+		}
+	}
+
+	#Focus for Shock and Awe
+	focus = {
+		id = ITA_shock_and_awe
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_reforms }
+		mutually_exclusive = { 
+			focus = ITA_mobile_warfare 
+		}
+		mutually_exclusive = { 
+			focus = ITA_worldclass_infantry 
+		}
+		mutually_exclusive = { 
+			focus = ITA_endless_legions 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = doctrine_bonus
+bonus = 0.5
+uses = 2
+category = cat_superior_firepower
+}
+		}
+	}
+
+	#Focus for World-Class Infantry
+	focus = {
+		id = ITA_worldclass_infantry
+		icon = GFX_goal_unknown
+		x = 26
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_reforms }
+		mutually_exclusive = { 
+			focus = ITA_mobile_warfare 
+		}
+		mutually_exclusive = { 
+			focus = ITA_shock_and_awe 
+		}
+		mutually_exclusive = { 
+			focus = ITA_endless_legions 
+		}
+		mutually_exclusive = { 
+			focus = ITA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = doctrine_bonus
+bonus = 0.5
+uses = 2
+category = cat_grand_battle_plan
+}
+		}
+	}
+
+	#Focus for Endless Legions
+	focus = {
+		id = ITA_endless_legions
+		icon = GFX_goal_unknown
+		x = 29
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_reforms }
+		mutually_exclusive = { 
+			focus = ITA_mobile_warfare 
+		}
+		mutually_exclusive = { 
+			focus = ITA_shock_and_awe 
+		}
+		mutually_exclusive = { 
+			focus = ITA_worldclass_infantry 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = doctrine_bonus
+bonus = 0.5
+uses = 2
+category = cat_mass_assault
+}
+		}
+	}
+
+	#Focus for Seek German Designs
+	focus = {
+		id = ITA_seek_german_designs
+		icon = GFX_goal_unknown
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_mobile_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+name = armor_bonus
+bonus = 1.0
+uses = 1
+category = armor
+			}
+		}
+	}
+
+	#Focus for Artillery our Strength
+	focus = {
+		id = ITA_artillery_our_strength
+		icon = GFX_goal_unknown
+		x = 23
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_shock_and_awe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Update Rifle Designs
+	focus = {
+		id = ITA_update_rifle_designs
+		icon = GFX_goal_unknown
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_worldclass_infantry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Further Recruitment
+	focus = {
+		id = ITA_further_recruitment
+		icon = GFX_goal_unknown
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_endless_legions }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 8000
+		}
+	}
+
+	#Focus for Preparing for the Inevitable
+	focus = {
+		id = ITA_preparing_for_the_inevitable
+		icon = GFX_goal_unknown
+		x = 11
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_contracts_with_fiat 
+			focus = ITA_support_local_businesses 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Red Victory
+	focus = {
+		id = ITA_red_victory
+		icon = GFX_goal_unknown
+		x = 5
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_seize_armories 
+		}
+		prerequisite = { 
+			focus = ITA_red_brigades 
+		}
+		prerequisite = { 
+			focus = ITA_seize_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.10
+}
+		}
+	}
+
+	#Focus for Pacify the Africans
+	focus = {
+		id = ITA_pacify_the_africans
+		icon = GFX_goal_unknown
+		x = 25
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reinforce_the_middle_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ITA_African_Resistance
+		}
+	}
+
+	#Focus for Lend Autonomy to the Slavs
+	focus = {
+		id = ITA_lend_autonomy_to_the_slavs
+		icon = GFX_goal_unknown
+		x = 22
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_process_of_decolonization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.1
+		}
+	}
+
+	#Focus for Loyalists in the Military
+	focus = {
+		id = ITA_loyalists_in_the_military
+		icon = GFX_goal_unknown
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_dissolve_the_blackshirts 
+			focus = ITA_a_cult_of_personality 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 15
+
+add_stability= 0.05
+		}
+	}
+
+	#Focus for Working with the Church
+	focus = {
+		id = ITA_working_with_the_church
+		icon = GFX_goal_unknown
+		x = 14
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_dissolve_the_blackshirts 
+		}
+		prerequisite = { 
+			focus = ITA_increase_celibacy_tax 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.9
+}
+		}
+	}
+
+	#Focus for A New Command
+	focus = {
+		id = ITA_a_new_command
+		icon = GFX_goal_unknown
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_seek_german_designs 
+			focus = ITA_artillery_our_strength 
+			focus = ITA_update_rifle_designs 
+			focus = ITA_further_recruitment 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_italian_command
+		}
+	}
+
+	#Focus for Support Local Businesses
+	focus = {
+		id = ITA_support_local_businesses
+		icon = GFX_goal_unknown
+		x = 12
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_target_big_business }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dissolve The Papacy
+	focus = {
+		id = ITA_dissolve_the_papacy
+		icon = GFX_goal_unknown
+		x = 18
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_dissolve_the_blackshirts 
+		}
+		prerequisite = { 
+			focus = ITA_increase_celibacy_tax 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			country_event= {
+days = 1 
+id = italianevents.8
+}
+		}
+	}
+
+	#Focus for Reinforce the Middle East
+	focus = {
+		id = ITA_reinforce_the_middle_east
+		icon = GFX_goal_unknown
+		x = 24
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reinforce_the_colonies }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_war_support= 0.1
+		}
+	}
+
+	#Focus for Pacify the Slavs
+	focus = {
+		id = ITA_pacify_the_slavs
+		icon = GFX_goal_unknown
+		x = 23
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reinforce_the_middle_east }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas= ITA_Slav_partisans
+		}
+	}
+
+	#Focus for African Self Governance
+	focus = {
+		id = ITA_african_self_governance
+		icon = GFX_goal_unknown
+		x = 21
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_middle_eastern_self_governance 
+		}
+		prerequisite = { 
+			focus = ITA_lend_autonomy_to_the_slavs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			release_puppet= LIB
+
+release_puppet= TUN
+		}
+	}
+
+	#Focus for Collaboration with Socialists
+	focus = {
+		id = ITA_collaboration_with_socialists
+		icon = GFX_goal_unknown
+		x = 12
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_alliance_with_socialists }
+		mutually_exclusive = { focus = ITA_move_away_from_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Target Big Business
+	focus = {
+		id = ITA_target_big_business
+		icon = GFX_goal_unknown
+		x = 12
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_improved_social_security 
+		}
+		prerequisite = { 
+			focus = ITA_cave_to_their_demands 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforce the Colonies
+	focus = {
+		id = ITA_reinforce_the_colonies
+		icon = GFX_goal_unknown
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_colonial_issues }
+		mutually_exclusive = { focus = ITA_process_of_decolonization }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+		}
+	}
+
+	#Focus for Cave to their Demands
+	focus = {
+		id = ITA_cave_to_their_demands
+		icon = GFX_goal_unknown
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_collaboration_with_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improved Social Security
+	focus = {
+		id = ITA_improved_social_security
+		icon = GFX_goal_unknown
+		x = 11
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_move_away_from_socialists 
+			focus = ITA_collaboration_with_socialists 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Move away from Socialists
+	focus = {
+		id = ITA_move_away_from_socialists
+		icon = GFX_goal_unknown
+		x = 10
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_alliance_with_socialists }
+		mutually_exclusive = { focus = ITA_collaboration_with_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Contracts with Fiat
+	focus = {
+		id = ITA_contracts_with_fiat
+		icon = GFX_goal_unknown
+		x = 10
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_ties_to_big_businesses }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Colonial Issues
+	focus = {
+		id = ITA_colonial_issues
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= ITA_open_elections
+		}
+	}
+
+	#Focus for Middle Eastern Self Governance
+	focus = {
+		id = ITA_middle_eastern_self_governance
+		icon = GFX_goal_unknown
+		x = 20
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_process_of_decolonization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Stable Empire
+	focus = {
+		id = ITA_a_stable_empire
+		icon = GFX_goal_unknown
+		x = 24
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_pacify_the_africans 
+		}
+		prerequisite = { 
+			focus = ITA_pacify_the_slavs 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.15
+		}
+	}
+
+	#Focus for Teaching the Next Generation
+	focus = {
+		id = ITA_teaching_the_next_generation
+		icon = GFX_goal_unknown
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_expanded_blackshirt_brigades 
+		}
+		prerequisite = { 
+			focus = ITA_national_syndicalism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_popularity= { 
+ideology = fascism 
+popularity = 0.15
+}
+		}
+	}
+
+	#Focus for Expand the OVRA
+	focus = {
+		id = ITA_expand_the_ovra
+		icon = GFX_goal_unknown
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_expanded_blackshirt_brigades }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_expanded_OVRA
+		}
+	}
+
+	#Focus for Spartan Lifestyle
+	focus = {
+		id = ITA_spartan_lifestyle
+		icon = GFX_goal_unknown
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_expand_the_ovra 
+		}
+		prerequisite = { 
+			focus = ITA_teaching_the_next_generation 
+		}
+		prerequisite = { 
+			focus = ITA_break_up_companies 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = ITA_corrupt_bureaucracy
+add_idea = ITA_spartanism
+}
+		}
+	}
+
+	#Focus for Oppose the Racial Laws
+	focus = {
+		id = ITA_oppose_the_racial_laws
+		icon = GFX_goal_unknown
+		x = 41
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_dino_grandi 
+			focus = ITA_italo_balbo 
+		}
+		mutually_exclusive = { focus = ITA_stand_by_it }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stand by it
+	focus = {
+		id = ITA_stand_by_it
+		icon = GFX_goal_unknown
+		x = 43
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_dino_grandi 
+			focus = ITA_italo_balbo 
+		}
+		mutually_exclusive = { focus = ITA_oppose_the_racial_laws }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 75
+
+ITA = {
+add_opinion_modifier = {
+target = USA
+modifier = large_increase
+                }
+            }
+            GER = {
+                add_opinion_modifier = {
+                    target = ITA
+                    modifier = large_increase
+                }
+            }
+		}
+	}
+
+	#Focus for Break Up Companies
+	focus = {
+		id = ITA_break_up_companies
+		icon = GFX_goal_unknown
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_national_syndicalism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+add_stability= -0.15
+		}
+	}
+
+	#Focus for Free-Market Corporatism
+	focus = {
+		id = ITA_freemarket_corporatism
+		icon = GFX_goal_unknown
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_italo_balbo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_free_market_corporatism
+		}
+	}
+
+	#Focus for Expand the Litoranea Balbo
+	focus = {
+		id = ITA_expand_the_litoranea_balbo
+		icon = GFX_goal_unknown
+		x = 45
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_freemarket_corporatism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Road to Rival The Autobahn
+	focus = {
+		id = ITA_a_road_to_rival_the_autobahn
+		icon = GFX_goal_unknown
+		x = 45
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_expand_the_litoranea_balbo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_timed_idea= { 
+idea = ITA_infrastructure_projects
+days = 375
+}
+		}
+	}
+
+	#Focus for A Bigger Merchant Fleet
+	focus = {
+		id = ITA_a_bigger_merchant_fleet
+		icon = GFX_goal_unknown
+		x = 47
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_global_trade_agreements }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    type = convoy
+    amount = 350
+    producer = ITA
+}
+		}
+	}
+
+	#Focus for Military Issues of the Italy
+	focus = {
+		id = ITA_military_issues_of_the_italy
+		icon = GFX_goal_unknown
+		x = 30
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Modern Fleet
+	focus = {
+		id = ITA_a_modern_fleet
+		icon = GFX_goal_unknown
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_mare_nostrum }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+add_tech_bonus = {
+bonus = 0.5
+uses = 1
+category = dd_tech
+}
+add_tech_bonus = {
+bonus = 0.5
+uses = 1
+category = ss_tech
+}
+		}
+	}
+
+	#Focus for Mare Nostrum
+	focus = {
+		id = ITA_mare_nostrum
+		icon = GFX_goal_unknown
+		x = 28
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_issues_of_the_italy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+
+	#Focus for Regia Aeronautica
+	focus = {
+		id = ITA_regia_aeronautica
+		icon = GFX_goal_unknown
+		x = 31
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_military_issues_of_the_italy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+
+	#Focus for Jet Advancements
+	focus = {
+		id = ITA_jet_advancements
+		icon = GFX_goal_unknown
+		x = 31
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_catching_up }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Focus on Extraction
+	focus = {
+		id = ITA_focus_on_extraction
+		icon = GFX_goal_unknown
+		x = 43
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_colonial_autonomy 
+		}
+		prerequisite = { 
+			focus = ITA_rule_with_an_iron_fist 
+		}
+		mutually_exclusive = { focus = ITA_focus_on_the_people }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_extraction
+		}
+	}
+
+	#Focus for Focus on the People
+	focus = {
+		id = ITA_focus_on_the_people
+		icon = GFX_goal_unknown
+		x = 41
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_colonial_autonomy 
+		}
+		prerequisite = { 
+			focus = ITA_rule_with_an_iron_fist 
+		}
+		mutually_exclusive = { focus = ITA_focus_on_extraction }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = ITA_people
+		}
+	}
+
+	#Focus for Italian Tunisia
+	focus = {
+		id = ITA_italian_tunisia
+		icon = GFX_goal_unknown
+		x = 41
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_bigger_subsidies_for_settlers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 458
+
+add_state_core= 665
+		}
+	}
+
+	#Focus for A New Italian Coast
+	focus = {
+		id = ITA_a_new_italian_coast
+		icon = GFX_goal_unknown
+		x = 43
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_bigger_subsidies_for_settlers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 448
+
+add_state_core= 449
+
+add_state_core= 450
+
+add_state_core= 451
+		}
+	}
+
+	#Focus for Going Inland
+	focus = {
+		id = ITA_going_inland
+		icon = GFX_goal_unknown
+		x = 42
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_italian_tunisia 
+		}
+		prerequisite = { 
+			focus = ITA_a_new_italian_coast 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core= 661
+
+add_state_core= 662
+
+add_state_core= 663
+
+add_state_core= 802
+
+add_state_core= 273
+
+remove_ideas= ITA_African_Resistance
+		}
+	}
+
+	#Focus for Send a Ultimatum to the Turks
+	focus = {
+		id = ITA_send_a_ultimatum_to_the_turks
+		icon = GFX_goal_unknown
+		x = 38
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_strengthen_our_presence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			TUR = { country_event = italianevents.3 }
+		}
+	}
+
+	#Focus for Reforming the Government
+	focus = {
+		id = ITA_reforming_the_government
+		icon = GFX_goal_unknown
+		x = 49
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_italo_balbo }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_stability= 0.05
+
+add_political_power= 50
+		}
+	}
+
+	#Focus for Replacing the Bureaucracy
+	focus = {
+		id = ITA_replacing_the_bureaucracy
+		icon = GFX_goal_unknown
+		x = 49
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_reforming_the_government }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = ITA_corrupt_bureaucracy
+add_idea = ITA_balbo_bureaucracy
+}
+		}
+	}
+
+	#Focus for Catching up
+	focus = {
+		id = ITA_catching_up
+		icon = GFX_goal_unknown
+		x = 31
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_regia_aeronautica }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+bonus = 0.25
+uses = 2
+category = air_doctrine
+}
+		}
+	}
+
+	#Focus for Bigger Subsidies for Settlers
+	focus = {
+		id = ITA_bigger_subsidies_for_settlers
+		icon = GFX_goal_unknown
+		x = 42
+		y = 11
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_the_fourth_shore }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			448 = {
+add_manpower= 9000
+}
+458 = {
+add_manpower= 9000
+}
+		}
+	}
+
+	#Focus for Ending the Swiss Menace
+	focus = {
+		id = ITA_ending_the_swiss_menace
+		icon = GFX_goal_unknown
+		x = 36
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_strengthen_our_presence }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = SWI
+}
+		}
+	}
+
+	#Focus for Strengthen Blackshirt Influence
+	focus = {
+		id = ITA_strengthen_blackshirt_influence
+		icon = GFX_goal_unknown
+		x = 49
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = ITA_replacing_the_bureaucracy }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			swap_ideas= {
+ remove_idea = ITA_Blackshirts
+add_idea = ITA_strengthen_blackshirt
+}
+		}
+	}
+
+	#Focus for An offer to the Germans
+	focus = {
+		id = ITA_an_offer_to_the_germans
+		icon = GFX_goal_unknown
+		x = 37
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = ITA_ending_the_swiss_menace 
+		}
+		prerequisite = { 
+			focus = ITA_send_a_ultimatum_to_the_turks 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GER = { country_event = italianevents.4 }
+		}
+	}
+
+#End of focuses 
+ }

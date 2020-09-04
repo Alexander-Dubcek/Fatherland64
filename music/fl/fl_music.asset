@@ -1,0 +1,389 @@
+#fl
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "ok.ogg"
+	volume = 0.90
+}
+
+# MIDDLE EAST
+
+music = {
+	name = "Saddam Hussein song"
+	file = "saddam_hussein_song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Mawtini (Motini)"
+	file = "palestine_mawtini.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "The Main Menu Music"
+	file = "ok.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Medal of Honor European Assault OST - Operation Chariot"
+	file = "medalofhonorchariot.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Eslami ya Misr (Peace be upon you)"
+	file = "egypt_kingdom_anthem.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Ba'ath Anthem"
+	file = "syria_baath_song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Prince of Persia"
+	file = "persia_1.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Ishy Bilady (Take my hand)"
+	file = "uae_anthem.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Ardulfurataini Watan (Arzlvarten homeland)"
+	file = "baath_iraq_anthem.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "lak Hubi Wafuaadi (You are my love and my heart)"
+	file = "egypt_bilady.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Sultan's palace"
+	file = "sultans_palace.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Cobra Desert"
+	file = "cobra_desert.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Ali Baba"
+	file = "ali_baba.ogg"
+	volume = 0.65
+}
+
+# AMERICAN WAR
+
+music = {
+	name = "Over There"
+	file = "over_there.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "USMC Hymn"
+	file = "marines_hymn.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Johnny Comes Marching Home"
+	file = "johnny_comes_marching_home.ogg"
+	volume = 0.65
+}
+
+# AMERICAN PEACE 60s
+
+music = {
+	name = "House of the Rising Sun (English)"
+	file = "house_of_the_rising_sun_english.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Yankee Doodle"
+	file = "yankee_doodle.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Battle Hymn of the Republic"
+	file = "battle_hymn_of_the_republic.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Stars and Stripes Forever"
+	file = "stars_and_stripes_forever.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Be My Baby"
+	file = "be_my_baby.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Johnny B. Goode"
+	file = "johnny_b_goode.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Califonia Dreamin'"
+	file = "california_dreamin.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Civilisation"
+	file = "civilisation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Son of a Preacher Man"
+	file = "son_of_a_preacher_man.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Something Stupid"
+	file = "something_stupid.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "These Boots Are Made For Walkin'"
+	file = "these_boots_are_made_for_walkin.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Hit The Road Jack"
+	file = "hit_the_road_jack.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Walkin' After Midnight"
+	file = "walkin_after_midnight.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "End of the World"
+	file = "end_of_the_world.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Stay"
+	file = "stay.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Wanderer"
+	file = "wanderer.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Star Spangled Banner"
+	file = "american_national_anthem.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Will You Still Love Me Tomorrow"
+	file = "will_you_still_love_me_tomorrow.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "For What It's worth"
+	file = "for_what_its_worth.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Johnny Guitar"
+	file = "johnny_guitar.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "High Hopes"
+	file = "high_hopes.ogg"
+	volume = 0.65
+}
+
+
+music = {
+	name = "Paint it Black"
+	file = "paint_it_black.ogg"
+	volume = 0.65
+}
+
+
+# European
+
+music = {
+	name = "European Anthem"
+	file = "european_anthem.ogg"
+	volume = 0.65
+}
+
+# Soviet
+
+music = {
+	name = "Defenders of Moscow"
+	file = "defenders_of_moscow.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Partisan's song"
+	file = "partisans_song.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Krasnaya Armiya Samaya Silnaya (The Red Army is the Strongest)"
+	file = "red_army_is_the_strongest.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Svyashchennaya Voyna (The Sacred War)"
+	file = "the_sacred_war.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Polyushko-polye (Song of the Plains)"
+	file = "polyushko_polye.ogg"
+	volume = 0.65
+}
+
+# Canada
+
+music = {
+	name = "God Save The King"
+	file = "god_save_the_king.ogg"
+	volume = 0.65
+}
+
+# German 
+
+music = {
+	name = "Deutschlandlied (German Anthem)"
+	file = "deutschland_uber_alles.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Liebe Heist Das (Love)"
+	file = "das_lied.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Morgen Marschieren Wir (Tomorrow We March)"
+	file = "morgen_marschieren_wir.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Paint It Black (German)"
+	file = "paint_it_black_german.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Du Bist Da (Are You Here)"
+	file = "du_bist_da.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Edelweiss (Noble white)"
+	file = "edelweiss.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Augen Geradeaus (Eyes straight ahead)"
+	file = "augen_geradeaus.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "SS Marschiert In Feindesland (SS marches in enemy territory)"
+	file = "ss_marschiert_in_feindesland.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Horst-Wessel-Lied (Horst Wessel Song)"
+	file = "horst_wessel.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Erika"
+	file = "erika.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Grenadier"
+	file = "grenadier.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Lore Lore Lore"
+	file = "lore_lore_lore.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "House Of The Rising Sun (German)"
+	file = "house_of_the_rising_sun_german.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Morgen (Morning)"
+	file = "morgen.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Mond Mond Ja Ja (Moon Moon Yes Yes)"
+	file = "mond_mond_ja_ja.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Nowhere To Run (German)"
+	file = "nowhere_to_run_german.ogg"
+	volume = 0.65
+}

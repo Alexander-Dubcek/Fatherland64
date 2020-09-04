@@ -1,0 +1,26 @@
+
+state={
+	id=808
+	name="STATE_808"
+	manpower = 1741209
+	
+	state_category = town
+	
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			3916 5
+		}
+		add_core_of = KUR
+		add_claim_by = IRQ
+
+	}
+
+	
+	provinces={
+		3916 5014 6826 10811 13249 13248 13268 13269 13270 
+	}
+}

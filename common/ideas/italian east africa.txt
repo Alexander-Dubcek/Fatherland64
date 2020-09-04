@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+
+		ITF_Ethiopian_Resistance = {
+			picture = Soldier3
+			cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_gain = -0.45
+			}
+		}
+		ITF_Italian_Shipments = {
+			picture = Soldier3
+			cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+		}
+	}
+}

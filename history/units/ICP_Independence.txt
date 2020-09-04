@@ -1,0 +1,108 @@
+﻿division_template = {
+	name = "Firqat Musha"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Firqat Musha"
+		location = 3795
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "2. Firqat Musha"
+		location = 12839
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "3. Firqat Musha"
+		location = 13247
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "4. Firqat Musha"
+		location = 10876
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "5. Firqat Musha"
+		location = 12855
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "6. Firqat Musha"
+		location = 7994
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "7. Firqat Musha"
+		location = 2004
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "8. Firqat Musha"
+		location = 13246
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "9. Firqat Musha"
+		location = 8001
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "10. Firqat Musha"
+		location = 2089
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = IRQ
+	}
+}

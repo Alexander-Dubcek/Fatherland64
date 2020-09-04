@@ -1,0 +1,138 @@
+﻿division_template = {
+	name = "Pekhotnaya Diviziya"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Mountaineers"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motostrelkovaya Diviziya"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1ya Pekhotnaya Diviziya"
+		location = 1378
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2ya Pekhotnaya Diviziya"
+		location = 1278
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+
+	}
+	division= {	
+		name = "3ya Pekhotnaya Diviziya"
+		location = 4354
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.75
+
+	}
+	division= {	
+		name = "4ya Pekhotnaya Diviziya"
+		location = 12242
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.76
+
+	}
+	division= {	
+		name = "5ya Pekhotnaya Diviziya"
+		location = 12242
+		division_template = "Pekhotnaya Diviziya"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.71
+
+	}
+	division= {	
+		name = "1ya Kazak Diviziya"
+		location = 12242
+		division_template = "Mountaineers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.71
+
+	}
+	division= {	
+		name = "2ya Kazak Diviziya"
+		location = 12242
+		division_template = "Mountaineers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.71
+
+	}
+	division= {	
+		name = "3ya Kazak Diviziya"
+		location = 12242
+		division_template = "Mountaineers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.71
+
+	}
+	division= {	
+		name = "1ya Motostrelkovaya Diviziya"
+		location = 12128
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "2ya Motostrelkovaya Diviziya"
+		location = 11433
+		division_template = "Motostrelkovaya Diviziya"
+		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}

@@ -1,0 +1,287 @@
+war_against_soviets = {
+	launch_soviet_attack1 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 200 }
+			tag = LOK
+			NOT = {
+				LOK = {
+					owns_state = 582
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+			NOT = {
+				LOK = {
+					owns_state = 582
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			582 = { set_border_war = yes }
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 651
+					num_provinces = 4 
+					on_win = geur.2
+					on_lose = geur.3
+			}
+			defender = { state = 582 
+					num_provinces = 4 
+					on_win = geur.4
+					on_lose = geur.5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	######
+	launch_soviet_attack2 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 200 }
+			tag = LOK
+			LOK = {
+				owns_state = 582
+			}
+			NOT = {
+				LOK = {
+					owns_state = 583
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+			LOK = {
+				owns_state = 582
+			}
+			NOT = {
+				LOK = {
+					owns_state = 583
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			583 = { set_border_war = yes }
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 582
+					num_provinces = 4 
+					on_win = geur.6
+					on_lose = geur.3
+			}
+			defender = { state = 583 
+					num_provinces = 4 
+					on_win = geur.4
+					on_lose = geur.5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack3 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 200 }
+			tag = LOK
+			OR = {
+				LOK = {
+					owns_state = 582
+				}
+				LOK = {
+					owns_state = 583
+				}
+			}
+			NOT = {
+				LOK = {
+					owns_state = 572
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+			OR = {
+				LOK = {
+					owns_state = 582
+				}
+				LOK = {
+					owns_state = 583
+				}
+			}
+			NOT = {
+				LOK = {
+					owns_state = 572
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			572 = { set_border_war = yes }
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 582
+					num_provinces = 4 
+					on_win = geur.7
+					on_lose = geur.3
+			}
+			defender = { state = 572
+					num_provinces = 4 
+					on_win = geur.4
+					on_lose = geur.5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack4 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 200 }
+			tag = LOK
+				LOK = {
+					owns_state = 583
+				}
+			NOT = {
+				LOK = {
+					owns_state = 590
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+				LOK = {
+					owns_state = 583
+				}
+			NOT = {
+				LOK = {
+					owns_state = 590
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			590 = { set_border_war = yes }
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 583
+					num_provinces = 4 
+					on_win = geur.8
+					on_lose = geur.3
+			}
+			defender = { state = 590
+					num_provinces = 4 
+					on_win = geur.4
+					on_lose = geur.5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack5 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 200 }
+			tag = LOK
+				LOK = {
+					owns_state = 651
+				}
+			NOT = {
+				LOK = {
+					owns_state = 573
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+				LOK = {
+					owns_state = 651
+				}
+			NOT = {
+				LOK = {
+					owns_state = 573
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			573 = { set_border_war = yes }
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 651
+					num_provinces = 4 
+					on_win = geur.9
+					on_lose = geur.3
+			}
+			defender = { state = 573
+					num_provinces = 4 
+					on_win = geur.4
+					on_lose = geur.5
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

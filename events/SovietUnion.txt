@@ -1,0 +1,213 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# Stalin Croaks
+country_event = {
+	id = soviet.1
+	title = soviet.1.t
+	desc = soviet.1.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = SOV
+		date >1964.5.5
+	}
+
+	option = {
+	name = soviet.1.a
+		kill_country_leader = yes
+		add_stability = -0.1
+		add_political_power = -75
+		set_country_flag = stalin_fucking_died
+	}
+}
+
+# Soviet Warlords
+country_event = {
+	id = soviet.2
+	title = soviet.2.t
+	desc = soviet.2.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = SOV
+		LOK = { owns_state = 582 }
+		LOK = { owns_state = 583 }
+		LOK = { owns_state = 590 }
+		LOK = { owns_state = 572 }
+		LOK = { owns_state = 573 }	
+		MOS = { owns_state = 581 }
+		MOS = { owns_state = 579 }
+		MOS = { owns_state = 580 }
+		MOS = { owns_state = 653 }
+	}
+
+	option = {
+	name = soviet.2.a
+		set_global_flag = union_collapsed
+		SV2 = { add_state_core = 644 }
+		SV2 = { add_state_core = 516 }
+		SV2 = { add_state_core = 576 }
+		SV2 = { add_state_core = 577 }
+		SV2 = { add_state_core = 578 }
+		SV2 = { add_state_core = 575 }
+		SV2 = { add_state_core = 571 }
+		SV2 = { add_state_core = 403 }
+		SV2 = { transfer_state = 644 }
+		SV2 = { transfer_state = 516 }
+		SV2 = { transfer_state = 576 }
+		SV2 = { transfer_state = 577 }
+		SV2 = { transfer_state = 578 }
+		SV2 = { transfer_state = 575 }
+		SV2 = { transfer_state = 571 }
+		SV2 = { transfer_state = 403 }
+		SV3 = { add_state_core = 654 }
+		SV3 = { add_state_core = 329 }
+		SV3 = { add_state_core = 567 }
+		SV3 = { add_state_core = 566 }
+		SV3 = { add_state_core = 565 }
+		SV3 = { add_state_core = 564 }
+		SV3 = { add_state_core = 40 }
+		SV3 = { add_state_core = 588 }
+		SV3 = { add_state_core = 570 }
+		SV3 = { add_state_core = 568 }
+		SV3 = { add_state_core = 563 }
+		SV3 = { add_state_core = 569 }
+		SV3 = { add_state_core = 330 }
+		SV3 = { transfer_state = 568 }
+		SV3 = { transfer_state = 654 }
+		SV3 = { transfer_state = 329 }
+		SV3 = { transfer_state = 567 }
+		SV3 = { transfer_state = 566 }
+		SV3 = { transfer_state = 565 }
+		SV3 = { transfer_state = 564 }
+		SV3 = { transfer_state = 40 }
+		SV3 = { transfer_state = 588 }
+		SV3 = { transfer_state = 570 }
+		SV3 = { transfer_state = 563 }
+		SV3 = { transfer_state = 569 }
+		SV3 = { transfer_state = 330 }
+		PRC = { transfer_state = 619 }
+		PRC = { transfer_state = 287 }
+		PRC = { transfer_state = 759 }
+		PRC = { transfer_state = 617 }
+		PRC = { transfer_state = 760 }
+		PRC = { transfer_state = 618 }
+	}
+}
+
+# Stalin's Successors
+country_event = {
+	id = soviet.3
+	title = soviet.3.t
+	desc = soviet.3.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = SOV
+		date >1964.5.5
+		has_country_flag = stalin_fucking_died
+	}
+
+	option = {
+	name = soviet.3.a
+		SOV = {
+			country_event = { id = soviet.4 }
+		}
+	}
+}
+
+# Stalin's Successors
+country_event = {
+	id = soviet.4
+	title = soviet.4.t
+	desc = soviet.4.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = SOV
+		date >1964.5.5
+		has_country_flag = stalin_fucking_died
+	}
+
+	option = { #Molotov
+	name = soviet.4.a
+		SOV = {
+			country_event = { id = soviet.5 }
+		}
+	create_country_leader = {	
+			name = "Vyacheslav Molotov"
+			picture = "Vyacheslav Molotov.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				#
+			}
+		}
+	}
+	option = { #Zhukov
+	name = soviet.4.b
+		SOV = {
+			country_event = { id = soviet.6 }
+		}
+		create_country_leader = {	
+				name = "Georgy Zhukov"
+				picture = "Georgy Zhukov.dds"
+				expire = "1965.1.1"
+				ideology = leninism
+				traits = {
+					#
+				}
+			}
+		}
+	option = { #Beria
+	name = soviet.4.c
+		SOV = {
+			country_event = { id = soviet.6 }
+		}
+		create_country_leader = {	
+			name = "Lavrentiy Beria"
+			picture = "Lavrentiy Beria.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+				#
+			}
+		}
+	}
+}
+
+#Infighting in Politburo
+country_event = {
+	id = soviet.5
+	title = soviet.5.t
+	desc = soviet.5.d
+	picture = report_event_equipment
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = SOV
+	}
+
+	option = { 
+	name = soviet.5.a
+
+	}
+}

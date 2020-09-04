@@ -1,0 +1,21 @@
+
+state={
+	id=802
+	name="STATE_802" 
+	manpower = 207733
+	
+	state_category = wasteland
+	impassable = yes
+
+	history={
+		owner = ITA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces={
+		1043 4903 8061 8077
+	}
+}

@@ -1,0 +1,60 @@
+﻿division_template = {
+	name = "Firqat Musha"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Firqat Musha"
+		location = 12991
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "2. Firqat Musha"
+		location = 2063
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "3. Firqat Musha"
+		location = 4909
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "4. Firqat Musha"
+		location = 10891
+		division_template = "Firqat Musha"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = ITA
+	}
+}

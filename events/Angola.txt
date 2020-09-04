@@ -1,0 +1,43 @@
+﻿###########################
+# Angolan Events
+###########################
+
+add_namespace = angola
+
+#Village Raided
+country_event = {
+	id = angola.1
+	title = angola.1.t
+	desc = angola.1.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = SAF
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = angola.1.a
+		set_country_flag = village_raided
+	}
+}
+
+#Carbomb in Pretoria
+country_event = {
+	id = angola.2
+	title = angola.2.t
+	desc = angola.2.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = SAF
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = angola.2.a
+		set_country_flag = carbomb
+	}
+}

@@ -1,0 +1,22 @@
+
+state={
+	id=810
+	name="STATE_810"
+	manpower = 11209
+	
+	state_category = wasteland
+	
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = IRQ
+
+	}
+
+	
+	provinces={
+		13266 1631 12413 13267
+	}
+}

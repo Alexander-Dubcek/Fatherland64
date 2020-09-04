@@ -1,0 +1,26 @@
+state = {
+
+	id=833
+	name="STATE_833"
+	manpower = 1645321
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = GMA
+		victory_points = {
+			7931 5
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = COG
+		add_core_of = GMA
+	}
+
+	provinces = {	 
+		13276 7931 988 10883 12741 12824
+	}
+}

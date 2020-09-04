@@ -1,0 +1,433 @@
+﻿division_template = {
+	name = "State Volunteers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		medium_armor = { x = 2 y = 0 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 		
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Motorized Brigade"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_tank = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1st Infantry Division"
+		location = 954
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Infantry Division"
+		location = 11635
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Infantry Division"
+		location = 11635
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Infantry Division"
+		location = 870
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Infantry Division"
+		location = 9810
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Infantry Division"
+		location = 1564
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Infantry Division"
+		location = 12346
+		division_template = "Infantry Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Missouri Volunteers"
+		location = 11621
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Missouri Volunteers"
+		location = 1881
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Missouri Volunteers"
+		location = 4527
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Missouri Volunteers"
+		location = 10370
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Illinois Volunteers"
+		location = 10393
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Illinois Volunteers"
+		location = 1604
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Illinois Volunteers"
+		location = 11589
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Illinois Volunteers"
+		location = 4590
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Illinois Volunteers"
+		location = 7831
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Indiana Volunteers"
+		location = 11637
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Indiana Volunteers"
+		location = 4527
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Indiana Volunteers"
+		location = 9796
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Wisconsin Volunteers"
+		location = 3699
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Wisconsin Volunteers"
+		location = 1560
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Wisconsin Volunteers"
+		location = 10526
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Wisconsin Volunteers"
+		location = 7776
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Wisconsin Volunteers"
+		location = 10341
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Infantry Brigade"
+		location = 691
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Infantry Brigade"
+		location = 6710
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Infantry Brigade"
+		location = 1564
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Infantry Brigade"
+		location = 1534
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Infantry Brigade"
+		location = 10333
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Infantry Brigade"
+		location = 12497
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Infantry Brigade"
+		location = 4569
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Infantry Brigade"
+		location = 9450
+		division_template = "Motorized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "1st Michigan Volunteers"
+		location = 9724
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2nd Michigan Volunteers"
+		location = 6710
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3rd Michigan Volunteers"
+		location = 11656
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4th Michigan Volunteers"
+		location = 691
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Michigan Volunteers"
+		location = 6782
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Michigan Volunteers"
+		location = 695
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Wisconsin Volunteers"
+		location = 7829
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Wisconsin Volunteers"
+		location = 10341
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Wisconsin Volunteers"
+		location = 7776
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5th Missouri Volunteers"
+		location = 4540
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Missouri Volunteers"
+		location = 12463
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Missouri Volunteers"
+		location = 12346
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Missouri Volunteers"
+		location = 10516
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9th Missouri Volunteers"
+		location = 10717
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "10th Missouri Volunteers"
+		location = 7449
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "6th Illinois Volunteers"
+		location = 12697
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "7th Illinois Volunteers"
+		location = 954
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "8th Illinois Volunteers"
+		location = 10339
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "9th Illinois Volunteers"
+		location = 12365
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "10th Illinois Volunteers"
+		location = 10393
+		division_template = "State Volunteers"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = USA
+	}
+}

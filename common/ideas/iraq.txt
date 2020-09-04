@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		
+		IRQ_Italian_Influence = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+				fascism_drift = 0.05
+                                stability_factor = -0.05
+                                production_oil_factor = -0.1
+
+			}
+		}	
+		IRQ_kurdish_problem = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = -0.15
+
+			}
+		}		
+		IRQ_tensions_rising_in_iraq = {
+			picture = generic_fascism_drift_bonus
+			cost = -1
+			
+			modifier = {
+                                stability_factor = -0.05
+
+			}
+		}	

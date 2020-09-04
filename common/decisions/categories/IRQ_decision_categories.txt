@@ -1,0 +1,24 @@
+IRQ_unconventional_means = {
+	picture = GFX_Kurds
+	icon = border_conflicts
+	allowed = {
+		tag = IRQ
+	}	
+	
+	visible = {
+		tag = IRQ
+		has_completed_focus = IRQ_new_ways
+	}
+}
+
+IRQ_conventional_means = {
+	picture = GFX_Kurds
+	icon = border_conflicts
+	allowed = {
+		tag = IRQ
+	}	
+	
+	visible = {
+		tag = IRQ
+	}
+}

@@ -1,0 +1,172 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Division d'Infanterie"		
+	division_names_group = FRA_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		anti_air = { x = 0 y = 0 } 		
+		engineer = { x = 0 y = 1 } 	
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 } 
+	}
+}
+
+division_template = {
+	name = "Division de Milice"		
+	division_names_group = FRA_GAR_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+	
+	}
+	priority = 0
+}
+
+##### OOB #####
+units = {
+	division= {			
+		name = "1er Infanterie Congolaise Libre"		
+		location = 2024
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}			
+	division= {			
+		name = "2eme Infanterie Congolaise Libre"		
+		location = 1731
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+
+	}
+	division= {			
+		name = "3eme Infanterie Congolaise Libre"		
+		location = 10858
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}		
+	division= {			
+		name = "5eme Infanterie Congolaise Libre"		
+		location = 1817
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "6eme Infanterie Congolaise Libre"		
+		location = 191
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "7eme Infanterie Congolaise Libre"		
+		location = 4515
+		division_template = "Division d'Infanterie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "1er Infanterie Katangaise Libre"		
+		location = 1968
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "2eme Infanterie Katangaise Libre"		
+		location = 9986
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "3eme Infanterie Katangaise Libre"		
+		location = 2024
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "4eme Infanterie Katangaise Libre"		
+		location = 1731
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "8eme Infanterie Congolaise Libre"		
+		location = 10858
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "10eme Infanterie Congolaise Libre"		
+		location = 1817
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "11eme Infanterie Congolaise Libre"		
+		location = 191
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "13eme Infanterie Congolaise Libre"		
+		location = 1968
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {			
+		name = "14eme Infanterie Congolaise Libre"		
+		location = 1929
+		division_template = "Division de Milice"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}	
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = GMA
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+###################

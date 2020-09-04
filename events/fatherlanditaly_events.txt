@@ -1,0 +1,85 @@
+add_namespace = fatherlanditaly
+
+##Event: The Duce has Passed
+country_event = {
+	id = fatherlanditaly.1
+	title = fatherlanditaly.1.title
+	desc = fatherlanditaly.1.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	trigger = {
+		tag = ITA
+date > 1964.2.1
+date < 1964.2.24
+	}
+	option = {
+		name = fatherlanditaly.1.a
+		ai_chance = { factor = 1}
+		kill_country_leader = yes
+set_country_flag = mussolini_dead
+create_country_leader= {
+ name = "Galeazzo Ciano"
+desc = ""
+picture = "portrait_Galeazzo_Ciano.dds" 
+expire = "1965.1.1"
+ideology = fascism_ideology 
+traits = {
+}
+	}
+}
+##Event: Open Elections
+country_event = {
+	id = fatherlanditaly.2
+	title = fatherlanditaly.2.title
+	desc = fatherlanditaly.2.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	trigger = {
+		ITA = {has_completed_focus
+= ITA_openelections}
+	}
+	option = {
+		name = fatherlanditaly.2.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = fatherlanditaly.2.b
+		ai_chance = { factor = 1}
+		add_political_power= 75
+
+add_stability= 0.05
+	}
+	option = {
+		name = fatherlanditaly.2.c
+		ai_chance = { factor = 1}
+		set_politics
+= { ruling_party = democratic 
+elections_allowed = yes }
+	}
+}
+##Event: Declaring a Republic
+country_event = {
+	id = fatherlanditaly.3
+	title = fatherlanditaly.3.title
+	desc = fatherlanditaly.3.desc
+	picture = GFX_event_test
+	fire_only_once = yes
+	trigger = {
+		ITA = {has_completed_focus
+= ITA_declaringarepublic}
+	}
+	option = {
+		name = fatherlanditaly.3.a
+		ai_chance = { factor = 1}
+		set_cosmetic_tag = ITA_REPUBLIC
+
+add_popularity= { 
+ideology = fascism 
+popularity = -0.1
+}
+
+add_stability= 0.15
+
+remove_ideas= Umberto_II
+	}
+}

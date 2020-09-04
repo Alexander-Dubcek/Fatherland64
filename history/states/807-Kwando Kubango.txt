@@ -1,0 +1,22 @@
+
+state={
+	id=807
+	name="STATE_807"
+	manpower = 1741209
+	
+	state_category = town
+	
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ANG
+
+	}
+
+	
+	provinces={
+		4735 12391 13241 13242
+	}
+}

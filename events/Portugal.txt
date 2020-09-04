@@ -1,0 +1,237 @@
+﻿###########################
+# Portugal Events
+###########################
+
+add_namespace = portugal
+
+#Neto Exiled from Angola
+country_event = {
+	id = portugal.1
+	title = portugal.1.t
+	desc = portugal.1.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = POR
+		date >1964.3.1
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.1.a
+
+	}
+}
+
+# Angolan Protests
+country_event = {
+	id = portugal.2
+	title = portugal.2.t
+	desc = portugal.2.d
+	picture = GFX_Angolan_Protestors
+	
+	trigger = {
+		tag = POR
+		date >1964.3.20
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.2.a
+		add_political_power = -65
+		add_stability = -0.02
+	}
+}
+
+#Angolans Kill Whites
+country_event = {
+	id = portugal.3
+	title = portugal.3.t
+	desc = portugal.3.d
+	picture = GFX_Whites_Killed
+	
+	trigger = {
+		tag = POR
+		date >1964.4.5
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.3.a
+		add_political_power = -15
+		add_stability = -0.05
+	}
+}
+
+#Neto Escapes Exile
+country_event = {
+	id = portugal.4
+	title = portugal.4.t
+	desc = portugal.4.d
+	picture = GFX_Neto_Returns
+	
+	trigger = {
+		tag = POR
+		date >1964.4.5
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.4.a
+		add_political_power = -25
+		add_stability = -0.03
+	}
+}
+
+#Angolan Militias Arm
+country_event = {
+	id = portugal.5
+	title = portugal.5.t
+	desc = portugal.5.d
+	picture = GFX_Rebels_Arm
+	
+	trigger = {
+		tag = POR
+		date >1964.4.30
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.5.a
+		add_political_power = -25
+		add_stability = -0.03
+		805 = { set_demilitarized_zone = yes }
+		806 = { set_demilitarized_zone = yes }
+		807 = { set_demilitarized_zone = yes }
+		796 = { set_demilitarized_zone = yes }
+	}
+}
+
+#Angolan War of Independence
+country_event = {
+	id = portugal.6
+	title = portugal.6.t
+	desc = portugal.6.d
+	picture = GFX_Angolan_War
+	
+	trigger = {
+		tag = POR
+		date >1964.7.30
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.6.a
+		add_political_power = -25
+		add_stability = -0.03
+		hidden_effect = {
+			MPL = { add_state_core = 805 }
+			MPL = { add_state_core = 796 }
+			MPL = { add_state_core = 540 }
+			NLA = { add_state_core = 806 }
+			NLA = { add_state_core = 540 }
+			UTI = { add_state_core = 807 }
+			UTI = { add_state_core = 540 }
+			MPL = { transfer_state = 796 }
+			MPL = { transfer_state = 805 }
+			NLA = { transfer_state = 806 }
+			UTI = { transfer_state = 807 }
+			MPL = { load_oob = "MPL_Independence" }
+			NLA = { load_oob = "NLA_Independence" }
+			UTI = { load_oob = "UTI_Independence" }
+			POR = { load_oob = "POR_Colonial_Garrison" }
+			MPL = {
+				declare_war_on= { 
+					target = POR
+					type = annex_everything 
+				}
+			}			
+			NLA = {
+				declare_war_on= { 
+					target = POR
+					type = annex_everything 
+				}
+			}			
+			UTI = {
+				declare_war_on= { 
+					target = POR
+					type = annex_everything 
+				}
+			}
+		}
+	}
+}
+
+# Portugal Loses Angola
+country_event = {
+	id = portugal.7
+	title = portugal.7.t
+	desc = portugal.7.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		OR = {
+			tag = MPL
+			tag = NLA
+			tag = UTI
+		}
+		NOT = {
+			540 = { is_controlled_by = POR }
+		}
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = portugal.7.a
+		hidden_effect = {
+			MPL = { transfer_state = 540 }
+			POR = {
+				white_peace = MPL
+				white_peace = NLA
+				white_peace = UTI
+			}
+			NLA = {
+				declare_war_on= { 
+					target = MPL
+					type = annex_everything 
+				}
+			}			
+			UTI = {
+				declare_war_on= { 
+					target = MPL
+					type = annex_everything 
+				}
+			}
+		}
+	}
+}
+
+# South Africa Supports UTI
+country_event = {
+	id = portugal.8
+	title = portugal.8.t
+	desc = portugal.8.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = UTI
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = portugal.8.a
+		hidden_effect = {
+			set_technology = { basic_light_tank = 1 }
+			set_technology = { motorised_infantry = 1 }
+			load_oob = "UTI_SAF_Volunteers"
+		}
+	}
+}

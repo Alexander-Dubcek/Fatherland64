@@ -1,0 +1,43 @@
+################
+##### USA ######
+################
+
+USA_organize_the_kkk = {
+
+	icon = GFX_KKK
+
+	picture = GFX_decision_cat_picture_organize_the_blackshirts
+	
+	allowed = {
+		tag = USA
+	}
+
+	on_map_area = {
+		state = 365
+		name = USA_organize_the_kkk_map_category_name
+		zoom = 250
+	}
+
+	priority = {
+		base = 0
+		modifier = {
+			add = 10
+		}
+	}
+
+	visible = {
+		tag = USA
+		has_completed_focus = USA_ally_the_klan
+	}
+}
+
+USA_civil_rights_movement = {
+	icon = GFX_Civil_rights
+	
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+	
+	}
+}

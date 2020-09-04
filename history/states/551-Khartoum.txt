@@ -1,0 +1,18 @@
+state={
+	id=551
+	name="STATE_551"
+	manpower = 13507
+	
+	state_category = rural
+	history = {
+		owner = ITF
+		buildings = {
+			infrastructure = 2
+		}
+
+		add_core_of = ITF
+	}
+	provinces={
+	    4963 8105 4138 12836
+	}
+}

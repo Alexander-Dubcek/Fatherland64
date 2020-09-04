@@ -1,0 +1,81 @@
+﻿###########################
+# KKK Events			  #
+###########################
+
+add_namespace = USA
+
+#  Successful KKK march in [statenamehere]!
+country_event = {
+	id = USA.26
+	title = USA.26.t
+	desc = USA.26.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+	}
+	is_triggered_only = yes
+
+	option = {
+	name = USA.26.a
+		clr_country_flag = USA_march_timer_flag
+		add_political_power = 25
+		add_stability = -0.02
+		add_popularity= { 
+			ideology = fascism 
+			popularity = 0.03 
+		}
+	}
+}
+
+#  Average Successful KKK march in [statenamehere]!
+country_event = {
+	id = USA.27
+	title = USA.27.t
+	desc = USA.27.d
+	picture = GFX_kkk_march_average
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+	}
+	is_triggered_only = yes
+
+	option = {
+	name = USA.27.a
+		clr_country_flag = USA_march_timer_flag
+		add_political_power = 10
+		add_stability = -0.02
+		add_popularity= { 
+			ideology = fascism 
+			popularity = 0.02 
+		}
+	}
+}
+
+#  Dissasterous KKK march in [statenamehere]!
+country_event = {
+	id = USA.28
+	title = USA.28.t
+	desc = USA.28.d
+	picture = GFX_kkk_march_violent
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+	}
+	is_triggered_only = yes
+
+	option = {
+	name = USA.28.a
+		clr_country_flag = USA_march_timer_flag
+		add_political_power = -35
+		add_stability = -0.05
+		add_popularity= { 
+			ideology = fascism 
+			popularity = -0.05 
+		}
+
+	}
+}

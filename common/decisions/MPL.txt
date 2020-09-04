@@ -1,0 +1,285 @@
+angolan_civil_war_MPL = {
+	acquire_firearms = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			tag = MPL
+		}
+
+		cost = 15
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	infiltrate_UTI_areas = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			MPL = { has_defensive_war_with = UTI }
+			tag = MPL
+		}
+
+		cost = 55
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				25 = {
+					807 = {
+						add_manpower = -276
+					}
+				}
+				25 = {
+					807 = {
+						damage_building = {
+							type = arms_factory
+							damage = 0.6
+						}
+					}
+				}
+				25 = {
+					807 = {
+						damage_building = {
+							type = industrial_complex
+							damage = 0.6
+						}			
+					}
+				}
+				25 = {
+					807 = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	infiltrate_south_africa = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			tag = MPL
+		}
+
+		cost = 55
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+			NOT = {
+				has_country_flag = carbomb
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				25 = {
+					541 = {
+						add_manpower = -12
+					}
+					SAF = {
+						country_event = { days = 1 id = angola.1 }
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = arms_factory
+							damage = 0.6
+						}
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = industrial_complex
+							damage = 0.6
+						}			
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	infiltrate_south_africa1 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			tag = MPL
+		}
+
+		cost = 55
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+			has_country_flag = carbomb
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				25 = {
+					541 = {
+						add_manpower = -36
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = arms_factory
+							damage = 0.6
+						}
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = industrial_complex
+							damage = 0.6
+						}			
+					}
+				}
+				25 = {
+					541 = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	infiltrate_rk_africa = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			tag = MPL
+		}
+
+		cost = 55
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			random_list = {
+				25 = {
+					295 = {
+						add_manpower = -12
+					}
+				}
+				25 = {
+					827 = {
+						damage_building = {
+							type = arms_factory
+							damage = 0.6
+						}
+					}
+				}
+				25 = {
+					771 = {
+						damage_building = {
+							type = industrial_complex
+							damage = 0.6
+						}			
+					}
+				}
+				25 = {
+					538 = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	arm_congo_rebels = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			tag = MPL
+		}
+
+		cost = 75
+
+		fire_only_once = no
+
+		visible = {
+			tag = MPL
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			GMA = {
+				add_timed_idea = { idea = communist_insurgents days = 550 }
+				country_event = { days = 60 id = congo.5 }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

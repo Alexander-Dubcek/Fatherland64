@@ -1,0 +1,25 @@
+
+state={
+	id=805
+	name="STATE_805"
+	manpower = 1441209
+	
+	state_category = town
+	
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 3
+			8219 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ANG
+
+	}
+
+	
+	provinces={
+		8219 12981 13237 13239
+	}
+}

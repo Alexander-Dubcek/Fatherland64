@@ -1,0 +1,24 @@
+state = {
+
+	id=821
+	name="STATE_821"
+	manpower = 125321
+	resources={
+
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ITF
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ITF
+		add_core_of = ETH
+	}
+
+	provinces = {	 
+		13260 7912 2009 13259 12856
+	}
+}

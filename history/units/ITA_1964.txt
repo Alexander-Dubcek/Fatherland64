@@ -1,0 +1,612 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Divisione di Fanteria"
+	division_names_group = ITA_INF_01 	
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "Divisione Alpina"				# Divisione Alpina (high experience, best equipment)
+	division_names_group = ITA_MNT_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }		# Elite Alpina Regiments
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Divisione Autotrasportabile"		# Divisione Autotrasportabile (North Africa)
+	# Note: semi-motorized regular infantry in North Africa
+	division_names_group = ITA_MOT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }		# L3/35 tankettes
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }	
+	}
+}
+division_template = {
+	name = "Divisione Motorizzata"
+	division_names_group = ITA_MOT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }	
+	}
+}
+
+division_template = {
+	name = "Divisione Corazzata"
+	division_names_group = ITA_ARM_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Divisione Marina"
+
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+		marine = { x = 2 y = 0 }
+		marine = { x = 2 y = 1 }
+		marine = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Forza Operativa Speciale"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 } 
+	}
+	priority = 2
+}
+
+
+##### OOB #####
+units = {
+	division= {	
+		name = "1ª Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2ª Divisione di Fanteria"
+		location = 9904
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "3ª Divisione di Fanteria"
+		location = 10074
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "4ª Divisione di Fanteria"
+		location = 3959
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "5ª Divisione di Fanteria"
+		location = 9909
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "6ª Divisione di Fanteria"
+		location = 3961
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "7ª Divisione di Fanteria"
+		location = 9736
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "8ª Divisione di Fanteria"
+		location = 6675
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "9ª Divisione di Fanteria"
+		location = 6606
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "10ª Divisione di Fanteria"
+		location = 3966
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "11ª Divisione di Fanteria"
+		location = 9914
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "12ª Divisione di Fanteria"
+		location = 11767
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "13ª Divisione di Fanteria"
+		location = 3924
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "14ª Divisione di Fanteria"
+		location = 599
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "15ª Divisione di Fanteria"
+		location = 4159
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "16ª Divisione di Fanteria"
+		location = 12058
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "17ª Divisione di Fanteria"
+		location = 7193
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "18ª Divisione di Fanteria"
+		location = 778
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "19ª Divisione di Fanteria"
+		location = 6609
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "20ª Divisione di Fanteria"
+		location = 11833
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "21ª Divisione di Fanteria"
+		location = 11861
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "22ª Divisione di Fanteria"
+		location = 8051
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "23ª Divisione di Fanteria"
+		location = 7960
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "24ª Divisione di Fanteria"
+		location = 11954
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "25ª Divisione di Fanteria"
+		location = 11921
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "26ª Divisione di Fanteria"
+		location = 1149
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "1ª Divisione Corazzata"
+		location = 4061
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2ª Divisione Corazzata"
+		location = 12066
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "3ª Divisione Corazzata"
+		location = 9904
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "4ª Divisione Corazzata"
+		location = 6788
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "5ª Divisione Corazzata"
+		location = 11723
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "6ª Divisione Corazzata"
+		location = 9752
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "27ª Divisione di Fanteria"
+		location = 6831
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "28ª Divisione di Fanteria"
+		location = 6891
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "29ª Divisione di Fanteria"
+		location = 3838
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "30ª Divisione di Fanteria"
+		location = 4200
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "1ª Divisione Marina"
+		location = 11837
+		division_template = "Divisione Marina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "2ª Divisione Marina"
+		location = 11837
+		division_template = "Divisione Marina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "3ª Divisione Marina"
+		location = 1106
+		division_template = "Divisione Marina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Gruppo Operazioni speciali 1"
+		location = 3780
+		division_template = "Forza Operativa Speciale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "Gruppo Operazioni speciali 2"
+		location = 6606
+		division_template = "Forza Operativa Speciale"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	
+}
+
+
+### Air Wings ###
+air_wings = {
+	158 = { 																# Milan
+		### 1a Squadra Aerea (CO: Fougier) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }					# 2a Divisione 'Borea' -- CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 123 }				# 4a Divisione Aerea 'Drago' -- BR.20
+						# 6a Divisione Aerea 'Falco' -- BR.20
+	}
+	115 = {																	# Sicily
+		### 2a Squadra Aerea -(CO: Lalli) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }					# 1a Divisione Aerea 'Aquila' -- CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 136 }				# 3a Divisione Aerea 'Centauro' -- SM.79
+						# 11a Brigada Aerea 'Nibbio' -- SM.79
+	}
+	2 = {																	# Rome
+		### 3a Squadra Aerea (CO: Pelligrini) ###
+		fighter_equipment_1 = { owner = "ITA" amount = 96 }					# 8a Brigada Aerea 'Ibis' -- G.50
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 88 }				# 5a Divisione Aerea 'Eolo' -- SM.79
+	}
+
+	156 = {																	# Bari
+		fighter_equipment_0 = { owner = "ITA" amount = 54 }					# 9a/I. Divisione Aerea 'Leone' -- CR.32
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 24 }				# 9a/II. Divisione Aerea 'Leone' -- SM.79
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }				# 9a/III. Divisione Aerea 'Leone' -- CANT.Z.506B
+	}
+	114 = {																	# Sardinia
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 64 }				# 10a/I. Divisione Aerea 'Marte' -- SM.79
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }				# 10a/II. Divisione Aerea 'Marte' -- CANT.Z.506B
+	}
+	44 = {																	# Albania
+		fighter_equipment_0 =  { owner = "ITA" amount = 24 }				# CR.42 (REVISIT -- VARIANT)
+		tac_bomber_equipment_0 = { owner = "ITA" amount = 32 }				# 10a/II. Divisione Aerea 'Marte' -- CANT.Z.506B
+	}
+	164 = {																	# Dodecanese
+		tac_bomber_equipment_0 = { owner = "ITA" amount = 24 }				# SM.81
+	}
+
+	### Commando Aeronautica Libia (CO: Porro) ###
+	448 = {																	# Tripoli
+		### Settore Ovest (CO: Barbarino) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 54 }					# CR.32
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 72 }				# SM.79
+		CAS_equipment_1 =  { owner = "ITA" amount = 36 }					# Ba.65
+	}
+	448 = {																	# Benghazi
+		### Settore Est (CO: Silvestri) ###
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 60 }				# 13a Brigada Aerea 'Pegaso' -- SM.79
+	}
+
+	### Commando Aeronautica Africa Orientale (CO: Pinna) ###
+	550 = {																	# Eritrea
+		### Settore Nord (CO: Piacentini) ###
+		fighter_equipment_0 = { owner = "ITA" amount = 45 }					# CR.42 (REVISIT -- VARANT)
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 54 }				# Ca.133
+	}
+	271 = {																	# Ethiopia
+		### Settore Centro (CO: Collati) ###
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 60 }				# Ca.133
+	}
+}
+
+
+	
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITA" 
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "ITA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ITA" 
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "ITA" 
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "ITA" 
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+}
+	#####################

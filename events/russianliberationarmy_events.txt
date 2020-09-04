@@ -1,0 +1,21 @@
+add_namespace = russianliberationarmy
+
+##Event: The State of the RLA
+country_event = {
+	id = russianliberationarmy.1
+	title = russianliberationarmy.1.title
+	desc = russianliberationarmy.1.desc
+	picture = GFX_ted_talk
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = LOK
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = russianliberationarmy.1.a
+		ai_chance = { factor = 1}
+	}
+}

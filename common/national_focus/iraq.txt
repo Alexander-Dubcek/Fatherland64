@@ -1,0 +1,177 @@
+focus_tree = {
+	id = iraqi_focus
+	country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = IRQ
+        }
+    }
+	
+continuous_focus_position = { x = 190 y = 1500 }
+
+	focus = {
+		id = IRQ_abduls_rule
+		icon = GFX_goal_abduls_rule
+		x = 7
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_iraqs_situation
+		icon = GFX_goal_iraqi_situation
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_abduls_rule }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_question_the_officers
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_iraqs_situation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+
+	focus = {
+		id = IRQ_the_kurdish_question
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_iraqs_situation }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_Saddams_Ba'athists
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = IRQ_the_SSNP }
+		prerequisite = { focus = IRQ_question_the_officers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_the_SSNP
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_question_the_officers }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_convestional_means
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_the_kurdish_question }
+		mutually_exclusive = { focus = IRQ_new_ways }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+	focus = {
+		id = IRQ_new_ways
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_the_kurdish_question }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+			unlock_decision_tooltip = IRQ_unconventional_means_tt
+		}
+}
+
+	focus = {
+		id = IRQ_secure_bagdad
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_convestional_means focus = IRQ_new_ways focus = IRQ_the_SSNP focus = IRQ_Saddams_Ba'athists }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+}
+
+	focus = {
+		id = IRQ_secure_arms
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = IRQ_secure_bagdad }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+}
+
+}

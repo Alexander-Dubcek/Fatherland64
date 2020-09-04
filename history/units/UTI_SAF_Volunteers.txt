@@ -1,0 +1,42 @@
+﻿division_template = {
+	name = "Gemeganiseerde Brigade"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1ste Gemeganiseerde Brigade"
+		location = 12391
+		division_template = "Gemeganiseerde Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 1000
+                producer = SAF
+	}
+	add_equipment_to_stockpile = {
+                type = light_tank_equipment_1
+                amount = 800
+                producer = SAF
+	}
+	add_equipment_to_stockpile = {
+                type = motorized_equipment_1
+                amount = 1500
+                producer = SAF
+	}
+}

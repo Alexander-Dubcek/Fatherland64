@@ -1,0 +1,109 @@
+﻿division_template = {
+	name = "Divisione di Fanteria"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Divisione Motorizzata"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1ª Divisione di Fanteria"
+		location = 411
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "2ª Divisione di Fanteria"
+		location = 1056
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3ª Divisione di Fanteria"
+		location = 12473
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "4ª Divisione di Fanteria"
+		location = 3942
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "5ª Divisione di Fanteria"
+		location = 12316
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "6ª Divisione di Fanteria"
+		location = 1088
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "7ª Divisione di Fanteria"
+		location = 7151
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "8ª Divisione di Fanteria"
+		location = 792
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "9ª Divisione di Fanteria"
+		location = 13250
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = POR
+	}
+}

@@ -1,0 +1,491 @@
+﻿###########################
+# USA Events
+###########################
+
+add_namespace = usa
+
+#1964 Elections
+country_event = {
+	id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date >1964.10.28
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = { #Kennedy Wins Again
+	name = usa.1.a
+		news_event = { id = news.10 days = 1 }
+		add_political_power = 50
+		add_stability = 0.05
+		set_global_flag = USA_kennedy_won
+	}
+	
+	option = { #Richard Nixon Wins
+		name = usa.1.b
+		news_event = { id = news.2 days = 1 }
+		add_political_power = 50
+		add_stability = 0.05
+		set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party }
+		create_country_leader = {
+			name = "Richard M. Nixon"
+			desc = ""
+			picture = "Richard M. Nixon.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			
+			}
+		}
+		set_global_flag = USA_nixon_won
+	}
+}
+
+#Hitler wants us to visit
+country_event = {
+	id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = USA
+		has_government = democratic
+		date >1964.2.28
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = usa.2.a
+		complete_national_focus = USA_visit_berlin
+		add_to_variable  = { var = USA_blacks value = 1 }
+		GER = {
+			country_event = { days = 1 id = germany.1 }
+		}
+	}
+	option = {
+	name = usa.2.b
+
+	}
+}
+
+#Harlem Shooting
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_Generic_Civil_Protest
+	
+	trigger = {
+		tag = USA
+		date >1964.3.1
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.3.a
+		add_stability = -0.03
+		add_political_power = -15
+		add_to_variable  = { var = USA_blacks value = 2 }
+	}
+
+}
+
+#Black Panther Ralley
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_Black_Panthers
+	
+	trigger = {
+		tag = USA
+		date >1964.5.2
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.4.a
+		add_stability = -0.03
+		add_political_power = -15
+		add_to_variable  = { var = USA_blacks value = 1 }
+	}
+
+}
+
+#Black Panther Ten Points
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_Black_Panthers
+	
+	trigger = {
+		tag = USA
+		date >1964.6.5
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.5.a
+		add_political_power = -15
+		add_to_variable  = { var = USA_blacks value = 1 }
+	}
+
+}
+
+#New Orleans Shooting
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 27 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.6.a
+		add_stability = -0.06
+		add_to_variable  = { var = USA_blacks value = 1 }
+	}
+}
+
+#KKK Militias Form
+country_event = {
+	id = usa.7
+	title = usa.7.t
+	desc = usa.7.d
+	picture = GFX_Generic_KKK
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 30 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.7.a
+		add_stability = -0.1
+		add_to_variable  = { var = USA_blacks value = 1 }
+	}
+}
+
+#Black Militias Form
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_Panthers_Armed
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 30 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.8.a
+		add_stability = -0.1
+			hidden_effect = {
+				random_list = {
+                6 = { country_event = { id = usa.9 days = 30 }
+
+                }
+                4 = { country_event = { id = usa.10 days = 30 } 
+
+                }	
+            }
+		}
+	}
+}
+
+#Black Panthers Target HoR
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = USA
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = usa.9.a
+
+	}
+}
+
+#Black Panthers Kill HoR
+country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = USA
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = usa.10.a
+		add_stability = -0.05
+	}
+}
+
+#Alabama Strike
+country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	picture = GFX_Generic_Civil_Protest
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 26 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.11.a
+		add_stability = -0.01
+		add_to_variable  = { var = USA_blacks value = 1 }
+	}
+	option = {
+	name = usa.11.b
+		add_political_power = 35
+		add_to_variable  = { var = USA_blacks value = 2 }
+	}
+}
+
+#Eldridge Cleaver calls for black secession
+country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	picture = GFX_Panthers_Armed
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 35 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.12.a
+		BLA = { add_state_core = 371 }
+		BLA = { add_state_core = 370 }
+		BLA = { add_state_core = 367 }
+		BLA = { add_state_core = 365 }
+		BLA = { add_state_core = 366 }
+		
+		BLA = { transfer_state = 371 }
+		BLA = { transfer_state = 370 }
+		BLA = { transfer_state = 367 }
+		BLA = { transfer_state = 365 }
+		BLA = { transfer_state = 366 }
+
+		BLA = {
+			load_oob = "BLA_1964"
+		}
+	}
+}
+
+#George Rockwell calls for Military Action
+country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	picture = GFX_American_Nazi_Party
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 35 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.13.a
+		USB = { add_state_core = 373 }
+		USB = { add_state_core = 395 }
+		USB = { add_state_core = 396 }
+		USB = { add_state_core = 394 }
+		USB = { add_state_core = 393 }
+		USB = { transfer_state = 373 }
+		USB = { transfer_state = 395 }
+		USB = { transfer_state = 396 }
+		USB = { transfer_state = 394 }
+		USB = { transfer_state = 393 }
+		
+		USB = {
+			load_oob = "USB_1964"
+		}
+		USA = {	
+			news_event = { days = 50 id = usa.13 }
+		}
+	}
+}
+
+#Cesar Chavez calls for defending Latino Americans
+country_event = {
+	id = usa.14
+	title = usa.14.t
+	desc = usa.14.d
+	picture = GFX_Cesar_Chavez
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 35 }
+		check_variable = { var = USA_latinos value = 30 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.14.a
+		CAL = { add_state_core = 378 }
+		CAL = { add_state_core = 377 }
+		CAL = { transfer_state = 378 }
+		CAL = { transfer_state = 377 }
+	}
+}
+
+#Robert Shelton calls for Black Disarmament
+country_event = {
+	id = usa.15
+	title = usa.15.t
+	desc = usa.15.d
+	picture = GFX_Generic_KKK
+	
+	trigger = {
+		tag = USA
+		check_variable = { var = USA_blacks value = 35 }
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = usa.15.a
+		CSA = { add_state_core = 368 }
+		CSA = { add_state_core = 369 }
+		CSA = { add_state_core = 362 }
+		CSA = { add_state_core = 363 }
+		CSA = { add_state_core = 364 }
+		
+		CSA = { transfer_state = 368 }
+		CSA = { transfer_state = 369 }
+		CSA = { transfer_state = 362 }
+		CSA = { transfer_state = 363 }
+		CSA = { transfer_state = 364 }
+		news_event = { days = 1 id = news.13 }
+		CSA = {
+			load_oob = "CSA_1964"
+		}
+	}
+}
+
+#Peace Talks fails, fight
+country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+	picture = GFX_Generic_KKK
+	
+	trigger = {
+		tag = USA
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = usa.16.a
+		CSA = { 
+			declare_war_on = { 
+				target = USA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = BLA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = CAL
+				type = civil_war 
+			}
+		}
+		
+		USB = {
+			declare_war_on = { 
+				target = USA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = BLA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = CAL
+				type = civil_war 
+			}
+		}
+		
+		BLA = {
+			declare_war_on = { 
+				target = USA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = CSA
+				type = civil_war 
+			}
+			declare_war_on = { 
+				target = USB
+				type = civil_war 
+			}
+		}
+		dismantle_faction = yes
+		CAN = {
+			create_faction = "World Treaty Organization"
+			add_to_faction = CAN
+			add_to_faction = MEX
+			add_to_faction = CUB
+			add_to_faction = HAI
+			add_to_faction = DOM
+			add_to_faction = GUA
+			add_to_faction = HON
+			add_to_faction = NIC
+			add_to_faction = PAN
+			add_to_faction = COL
+			add_to_faction = ECU
+			add_to_faction = VEN
+			add_to_faction = BRA
+			add_to_faction = BOL
+			add_to_faction = ARG
+			add_to_faction = URG
+		}
+	}
+}

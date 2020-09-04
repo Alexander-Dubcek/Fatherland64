@@ -1,0 +1,27 @@
+
+state={
+	id=554
+	name="STATE_554"
+	manpower = 2115594
+	
+	state_category = town
+
+	history={
+		owner = ITM
+		victory_points = {
+			4111 5
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+		}
+		add_core_of = ITM
+		add_core_of = SYR	
+
+	}
+
+
+	provinces={
+	 4111 4550 7184 13250
+	}
+}

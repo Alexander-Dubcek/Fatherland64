@@ -1,0 +1,25 @@
+state = {
+
+	id=824
+	name="STATE_824"
+	manpower = 45321
+	resources={
+	}
+	
+	state_category = town
+
+	history = {
+		owner = ITF
+		victory_points = {
+			12806 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ITF
+	}
+
+	provinces = {	 
+		4961 12796 12826 7925 12806 10743 12881 10784 12862 2088
+	}
+}

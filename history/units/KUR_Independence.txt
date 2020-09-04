@@ -1,0 +1,68 @@
+﻿division_template = {
+	name = "Dabeşkirina Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Dabeşkirina Infantry"
+		location = 10811
+		division_template = "Dabeşkirina Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "2. Dabeşkirina Infantry"
+		location = 3916
+		division_template = "Dabeşkirina Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "3. Dabeşkirina Infantry"
+		location = 13249
+		division_template = "Dabeşkirina Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "4. Dabeşkirina Infantry"
+		location = 13269
+		division_template = "Dabeşkirina Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division= {	
+		name = "5. Dabeşkirina Infantry"
+		location = 13270
+		division_template = "Dabeşkirina Infantry"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = IRQ
+	}
+}

@@ -1,0 +1,23 @@
+﻿units = {
+	division= {	
+		name = "1ª Divisão de Infantaria"
+		location = 8248
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "3ª Divisão de Infantaria"
+		location = 12985
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "5ª Divisão de Infantaria"
+		location = 1552
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}

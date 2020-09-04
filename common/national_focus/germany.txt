@@ -1,0 +1,171 @@
+﻿focus_tree = {
+	id = german_focus
+	country = {
+        factor = 0
+
+        modifier = {
+            add = 10
+            tag = GER
+        }
+    }
+
+
+	focus = {
+		id = GER_a_new_year
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_state_of_the_reich
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_year }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_economic_plans
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_year }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_year }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}		
+
+
+	focus = {
+		id = GER_convene_the_reichstag
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 40
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_gobbels
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_convene_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+	
+	focus = {
+		id = GER_Heydreich 
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_convene_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_Rommel
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_convene_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_Bormann
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 43
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_convene_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}
+
+	focus = {
+		id = GER_Speer
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 46
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_convene_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 25
+		}
+	}		
+}

@@ -1,0 +1,98 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_kkk_march_peaceful"
+		texturefile = "gfx/event_pictures/kkk_march_peaceful.dds"
+	}
+	spriteType = {
+		name = "GFX_kkk_march_average"
+		texturefile = "gfx/event_pictures/kkk_march_average.dds"
+	}
+	spriteType = {
+		name = "GFX_kkk_march_violent"
+		texturefile = "gfx/event_pictures/kkk_march_violent.dds"
+	}
+	spriteType = {
+		name = "GFX_ted_talk"
+		texturefile = "gfx/event_pictures/vlasov_ted_talk.dds"
+	}
+	spriteType = {
+		name = "GFX_Neto_Returns"
+		texturefile = "gfx/event_pictures/Neto Returns.dds"
+	}
+	spriteType = {
+		name = "GFX_Neto_Exiled"
+		texturefile = "gfx/event_pictures/Neto Exiled.dds"
+	}
+	spriteType = {
+		name = "GFX_Angolan_Protestors"
+		texturefile = "gfx/event_pictures/Angolan Protestors.dds"
+	}
+	spriteType = {
+		name = "GFX_Angolan_War"
+		texturefile = "gfx/event_pictures/Angolan War.dds"
+	}
+	spriteType = {
+		name = "GFX_Rebels_Arm"
+		texturefile = "gfx/event_pictures/Rebels_Arm.dds"
+	}
+	spriteType = {
+		name = "GFX_Whites_Killed"
+		texturefile = "gfx/event_pictures/Whites Killed.dds"
+	}
+	spriteType = {
+		name = "GFX_Nixon_Elected"
+		texturefile = "gfx/event_pictures/Nixon Elected.dds"
+	}
+	spriteType = {
+		name = "GFX_POA_Border_Conflict"
+		texturefile = "gfx/event_pictures/POA_border_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_Attack_Failed"
+		texturefile = "gfx/event_pictures/Attack_Failed.dds"
+	}
+	spriteType = {
+		name = "GFX_Defense_Failed"
+		texturefile = "gfx/event_pictures/Defense_Failed.dds"
+	}
+	spriteType = {
+		name = "GFX_Soviets_Collapse"
+		texturefile = "gfx/event_pictures/Collapse.dds"
+	}
+	spriteType = {
+		name = "GFX_American_Nazi_Party"
+		texturefile = "gfx/event_pictures/ANP.dds"
+	}
+	spriteType = {
+		name = "GFX_Black_Panthers"
+		texturefile = "gfx/event_pictures/Black Panthers.dds"
+	}
+	spriteType = {
+		name = "GFX_Panthers_Armed"
+		texturefile = "gfx/event_pictures/BP Armed.dds"
+	}
+	spriteType = {
+		name = "GFX_Cesar_Chavez"
+		texturefile = "gfx/event_pictures/Chavez.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_Civil_Protest"
+		texturefile = "gfx/event_pictures/Civil Protest.dds"
+	}
+	spriteType = {
+		name = "GFX_Generic_KKK"
+		texturefile = "gfx/event_pictures/KKK.dds"
+	}
+	spriteType = {
+		name = "GFX_Simbas"
+		texturefile = "gfx/event_pictures/Simba Rebels.dds"
+	}
+	spriteType = {
+		name = "GFX_Tshombe_Returns"
+		texturefile = "gfx/event_pictures/Tshombe.dds"
+	}
+	spriteType = {
+		name = "GFX_hitlers_birthday"
+		texturefile = "gfx/event_pictures/hitlers_birthday.dds"
+	}
+}

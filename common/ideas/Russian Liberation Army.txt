@@ -1,0 +1,191 @@
+ideas = {
+	country = {
+		lok_russian_liberation_army = {
+			picture = lok_poa
+			removal_cost = -1
+			
+			modifier = {
+                army_org = 5
+                planning_speed = 0.10
+                training_time_army_factor = -0.1
+                stability_factor = -0.10
+			}
+		}
+		lok_german_support = {
+			picture = lok_german_support
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = 0.02
+                consumer_goods_factor = -0.05
+			}
+		}
+	}
+
+	political_advisor = {
+
+		vasily_malyshkin = {
+
+			allowed = {
+				original_tag = LOK
+			}
+
+			available = {
+				has_government = fascism
+				if = {
+					has_government = fascism
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { propaganda_expert }
+
+			
+			ai_will_do = {
+				factor = 24
+			}
+		}
+
+		fyodor_truhin = {
+
+			allowed = {
+				original_tag = LOK
+				has_dlc = "La Resistance" 
+			}
+
+			available = {
+				has_government = fascism
+				has_intelligence_agency = yes
+			}
+			
+			traits = { head_of_intelligence }
+
+			
+			ai_will_do = {
+				factor = 24
+			}
+		}
+
+		andrey_diky = {
+
+			allowed = {
+				original_tag = LOK
+			}
+
+			available = {
+				has_government = fascism
+			}
+			
+			traits = { fascist_demagogue }
+
+			
+			ai_will_do = {
+				factor = 24
+			}
+		}
+	}
+
+	army_chief = {
+
+		Mikhail_Meandrov = {
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+			
+			traits = { army_chief_offensive_1 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		Wilfried_Strik-Strikfeldt = {
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+			
+			traits = { army_chief_organizational_2 }			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+        }
+
+	air_chief = {
+		
+		Maltsev_Viktor_Ivanovich = {
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+
+			available = {
+				OR = {
+					has_government = fascism
+				}
+			}
+
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		Semyon_Bychkov = {
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+
+			available = {
+				OR = {
+					has_government = fascism
+				}
+			}
+
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	high_command = {
+
+		Constantine_Kromiadi = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		Vladimir_Gil = {
+			ledger = army
+
+			
+			allowed = {
+				original_tag = LOK
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}

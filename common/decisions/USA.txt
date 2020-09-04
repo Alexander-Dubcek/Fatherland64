@@ -1,0 +1,650 @@
+USA_organize_the_kkk = {
+
+	USA_propaganda_program = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			NOT = { has_government = fascism }
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+		tag = USA
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	USA_kkk_march_in_georgia = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 365
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 365 }
+
+		on_map_mode = map_only
+		
+		cost = 26
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			365 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.041
+						add_popularity = { ideology = fascism popularity = 0.027 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.054
+						add_popularity = { ideology = fascism popularity = 0.027 }
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.081
+						add_popularity = { ideology = fascism popularity = 0.027 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_georgia
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.581
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_south_carolina = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 364
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 364 }
+		
+		on_map_mode = map_only
+
+		cost = 6
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			364 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.009
+						add_popularity = { ideology = fascism popularity = 0.006 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.012
+						add_popularity = { ideology = fascism popularity = 0.006 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.018
+						add_popularity = { ideology = fascism popularity = 0.006 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_south_carolina
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.518
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_tennessee = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 368
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 368 }
+
+		on_map_mode = map_only
+
+		cost = 17
+		
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			368 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.026
+						add_popularity = { ideology = fascism popularity = 0.017 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.034
+						add_popularity = { ideology = fascism popularity = 0.017 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.051
+						add_popularity = { ideology = fascism popularity = 0.017 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_tennessee
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.551
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_alabama = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 367
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 367 }
+
+		on_map_mode = map_only
+
+		cost = 48
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			367 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.077
+						add_popularity = { ideology = fascism popularity = 0.051 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.102
+						add_popularity = { ideology = fascism popularity = 0.051 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.153
+						add_popularity = { ideology = fascism popularity = 0.051 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_alabama
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.653
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_florida = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 366
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 366 }
+		
+		on_map_mode = map_only
+
+		cost = 31
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			366 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.048
+						add_popularity = { ideology = fascism popularity = 0.032 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.064
+						add_popularity = { ideology = fascism popularity = 0.032 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = fascism popularity = 0.032 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_florida
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.596
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_mississippi = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 370
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 370 }
+
+		on_map_mode = map_only
+
+		cost = 46
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			370 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.072
+						add_popularity = { ideology = fascism popularity = 0.048 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.096
+						add_popularity = { ideology = fascism popularity = 0.048 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.144
+						add_popularity = { ideology = fascism popularity = 0.048 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_mississippi
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.644
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_north_carolina = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 363
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 363 }
+
+		on_map_mode = map_only
+
+		cost = 30
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			363 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.157
+						add_popularity = { ideology = fascism popularity = 0.101 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.202
+						add_popularity = { ideology = fascism popularity = 0.101 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.303
+						add_popularity = { ideology = fascism popularity = 0.101 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_north_carolina
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.803
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_maryland = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 361
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 361 }
+
+		on_map_mode = map_only
+
+		cost = 113
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			361 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.195
+						add_popularity = { ideology = fascism popularity = 0.13 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.26
+						add_popularity = { ideology = fascism popularity = 0.13 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.39
+						add_popularity = { ideology = fascism popularity = 0.13 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_maryland
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.89
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+
+	USA_kkk_march_in_washington = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			has_full_control_of_state = 801
+			NOT = { has_country_flag = USA_march_timer_flag }
+		}
+
+		highlight_states = { state = 801 }
+
+		on_map_mode = map_only
+
+		cost = 200
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = USA_march_timer_flag
+			801 = { save_event_target_as = usa_kkk_march_state }
+			random_list = {
+				25 = {
+					country_event = { id = USA.26 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.078
+						add_popularity = { ideology = fascism popularity = 0.052 }
+					}
+				}
+				50 = {
+					country_event = { id = USA.27 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.104
+						add_popularity = { ideology = fascism popularity = 0.052 }
+					}
+				}
+				25 = {
+					country_event = { id = USA.28 days = 1 }
+					effect_tooltip = {
+						add_stability = -0.156
+						add_popularity = { ideology = fascism popularity = 0.052 }
+					}
+				}
+			}
+			set_country_flag = usa_march_temp_washington
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_stability < 0.656
+			}
+			modifier = {
+				factor = 0
+				fascism > 0.5
+			}
+		}
+	}
+}
+
+USA_civil_rights_movement = {
+
+	USA_rights_act_1964 = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			NOT = { has_government = fascism }
+		}
+
+		cost = 25
+
+		fire_only_once = no
+
+		visible = {
+		tag = USA
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

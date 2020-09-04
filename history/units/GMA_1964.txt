@@ -1,0 +1,197 @@
+﻿division_template = {
+	name = "Deutsche Infanterie-Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Afrikanische Infanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Afrikanische Infanterie-Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		name = "1. Infanterie-Division "
+		location = 5117
+		division_template = "Deutsche Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "2. Infanterie-Division"
+		location = 4128
+		division_template = "Deutsche Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "3. Infanterie-Division"
+		location = 5117
+		division_template = "Afrikanische Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "4. Infanterie-Division"
+		location = 2196
+		division_template = "Afrikanische Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {	
+		name = "5. Infanterie-Division"
+		location = 697
+		division_template = "Afrikanische Infanterie-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "6. Infanterie-Division"
+		location = 191
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "7. Infanterie-Division"
+		location = 12986
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "8. Infanterie-Division"
+		location = 7219
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "12. Infanterie-Division"
+		location = 5117
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "13. Infanterie-Division"
+		location = 10025
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "14. Infanterie-Division"
+		location = 12795
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "16. Infanterie-Division"
+		location = 12824
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "17. Infanterie-Division"
+		location = 7931
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "18. Infanterie-Division"
+		location = 10071
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "21. Infanterie-Division"
+		location = 1181
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "22. Infanterie-Division"
+		location = 8016
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 10803
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "24. Infanterie-Division"
+		location = 10862
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		name = "25. Infanterie-Division"
+		location = 1909
+		division_template = "Afrikanische Infanterie-Brigade"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = GMA
+	}
+}

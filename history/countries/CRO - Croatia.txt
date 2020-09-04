@@ -1,0 +1,24 @@
+﻿capital = 109
+oob = "CRO_1964"
+set_politics = {
+	ruling_party = fascism
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 65
+	communism = 20
+	neutrality = 5
+	democratic = 10
+}
+
+create_country_leader = {
+	name = "Andrija Artukovic"
+	desc = ""
+	picture = "Portrait_CRO_Andrija_Artukovic.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}

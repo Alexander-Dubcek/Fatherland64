@@ -1,0 +1,108 @@
+﻿###########################
+# Cuban Events			  #
+###########################
+
+add_namespace = cuba
+
+#Castro Retreats to Mountains
+country_event = {
+	id = cuba.1
+	title = cuba.1.t
+	desc = cuba.1.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = CUB
+		date >1964.2.2
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = cuba.1.a
+		add_stability = 0.02
+	}
+}
+
+#Army moves into mountains
+country_event = {
+	id = cuba.2
+	title = cuba.2.t
+	desc = cuba.2.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = CUB
+		date >1964.7.4
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = cuba.2.a
+		826 = {
+			add_manpower = -352
+		}
+		add_stability = -0.05
+	}
+}
+
+#Castro Stages Second Uprising
+country_event = {
+	id = cuba.3
+	title = cuba.3.t
+	desc = cuba.3.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = CUB
+		date >1964.12.1
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = cuba.3.a
+		hidden_effect = {
+			USA = {
+				remove_from_faction = CUB
+			}
+			CCB = { add_state_core = 315 }
+			CCB = { add_state_core = 826 }
+			CCB = { transfer_state = 826 }
+
+			CCB = {
+				declare_war_on= { 
+					target = CUB
+					type = civil_war
+				}
+			}
+			CCB = {
+				load_oob = "CCB_1964"
+			}
+		}
+	}
+	option = {
+	name = cuba.3.b
+		hidden_effect = {
+			change_tag_from = CCB
+			CCB = { change_tag_from = CUB }
+			USA = {
+				remove_from_faction = CUB
+			}
+			CCB = { add_state_core = 315 }
+			CCB = { add_state_core = 826 }
+			CCB = { transfer_state = 826 }
+
+			CCB = {
+				declare_war_on= { 
+					target = CUB
+					type = civil_war
+				}
+			}
+			CCB = {
+				load_oob = "CCB_1964"
+			}
+		}
+	}
+}

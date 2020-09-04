@@ -1,0 +1,22 @@
+
+state={
+	id=816
+	name="STATE_816"
+	manpower = 361209
+	
+	state_category = town
+	
+	history={
+		owner = ITM
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = SYR
+		add_core_of = ITM
+	}
+
+	
+	provinces={
+		1088 10087
+	}
+}

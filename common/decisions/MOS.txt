@@ -1,0 +1,216 @@
+war_against_soviets_mos = {
+	launch_soviet_attack1_mos = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 400 }
+			tag = MOS
+			NOT = {
+				MOS = {
+					owns_state = 581
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = MOS
+			NOT = {
+				MOS = {
+					owns_state = 581
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 398
+					num_provinces = 4 
+					on_win = geur.11
+					on_lose = geur.12
+			}
+			defender = { state = 581 
+					num_provinces = 4 
+					on_win = geur.13
+					on_lose = geur.14
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack2_mos = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 400 }
+			tag = MOS
+			MOS = {
+				owns_state = 581
+			}
+			NOT = {
+				MOS = {
+					owns_state = 653
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = MOS
+			MOS = {
+				owns_state = 581
+			}
+			NOT = {
+				MOS = {
+					owns_state = 653
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 581
+					num_provinces = 4 
+					on_win = geur.15
+					on_lose = geur.12
+			}
+			defender = { state = 653
+					num_provinces = 4 
+					on_win = geur.13
+					on_lose = geur.14
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack3_mos = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 400 }
+			tag = LOK
+				LOK = {
+					owns_state = 581
+				}
+			NOT = {
+				LOK = {
+					owns_state = 579
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		visible = {
+			tag = LOK
+				LOK = {
+					owns_state = 581
+				}
+			NOT = {
+				LOK = {
+					owns_state = 579
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			start_border_war = { 
+				change_state_after_war = no
+				attacker = { state = 581
+					num_provinces = 4 
+					on_win = geur.16
+					on_lose = geur.12
+			}
+			defender = { state = 579
+					num_provinces = 4 
+					on_win = geur.13
+					on_lose = geur.14
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	launch_soviet_attack4_mos = {
+
+		icon = eng_propaganda_campaigns
+
+		available = {
+			has_equipment = { infantry_equipment > 400 }
+			tag = MOS
+				MOS = {
+					owns_state = 653
+				}
+			NOT = {
+				MOS = {
+					owns_state = 580
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = MOS
+				MOS = {
+					owns_state = 653
+				}
+			NOT = {
+				MOS = {
+					owns_state = 580
+				}
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			start_border_war= { 
+				change_state_after_war = no
+				attacker = { state = 653
+					num_provinces = 4 
+					on_win = geur.17
+					on_lose = geur.12
+			}
+			defender = { state = 580
+					num_provinces = 4 
+					on_win = geur.13
+					on_lose = geur.14
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

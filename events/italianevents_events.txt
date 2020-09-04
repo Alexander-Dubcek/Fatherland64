@@ -1,0 +1,214 @@
+add_namespace = italianevents
+
+##Event: Open Elections
+country_event = {
+	id = italianevents.1
+	title = italianevents.1.title
+	desc = italianevents.1.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		ITA = {has_completed_focus
+= ITA_openelections}
+	}
+	option = {
+		name = italianevents.1.a
+		ai_chance = { factor = 1}
+		complete_national_focus= ITA_the_step_son_wins
+	}
+	option = {
+		name = italianevents.1.b
+		ai_chance = { factor = 1}
+		complete_national_focus= ITA_social_democrat
+	}
+	option = {
+		name = italianevents.1.c
+		ai_chance = { factor = 1}
+		complete_national_focus= ITA_biennio_rosso
+	}
+}
+##Event: Declaring a Republic
+country_event = {
+	id = italianevents.2
+	title = italianevents.2.title
+	desc = italianevents.2.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		ITA = {has_completed_focus
+= ITA_declaringarepublic}
+	}
+	option = {
+		name = italianevents.2.a
+		ai_chance = { factor = 1}
+		set_cosmetic_tag = ITA_REPUBLIC
+
+add_popularity= { 
+ideology = fascism 
+popularity = -0.1
+}
+
+add_stability= 0.1
+
+remove_ideas= Umberto_II
+	}
+}
+##Event: Italian Ultimatum
+country_event = {
+	id = italianevents.3
+	title = italianevents.3.title
+	desc = italianevents.3.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.3.a
+		ai_chance = { factor = 1}
+		ITA = { country_event = italianevents.6 }
+	}
+	option = {
+		name = italianevents.3.b
+		ai_chance = { factor = 1}
+		ITA = { puppet= TUR }
+	}
+}
+##Event: Italian Offer
+country_event = {
+	id = italianevents.4
+	title = italianevents.4.title
+	desc = italianevents.4.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.4.a
+		ai_chance = { factor = 1}
+		ITA = {
+transfer_state = 453
+}
+ITA = {
+transfer_state = 454
+}
+	}
+	option = {
+		name = italianevents.4.b
+		ai_chance = { factor = 1}
+		ITA = { country_event = italianevents.7 }
+	}
+}
+##Event: The Council Convenes
+country_event = {
+	id = italianevents.5
+	title = italianevents.5.title
+	desc = italianevents.5.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.5.a
+		ai_chance = { factor = 1}
+	}
+	option = {
+		name = italianevents.5.b
+		ai_chance = { factor = 1}
+	}
+}
+##Event: The Turks Reject!
+country_event = {
+	id = italianevents.6
+	title = italianevents.6.title
+	desc = italianevents.6.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.6.a
+		ai_chance = { factor = 1}
+		add_stability= -0.15
+	}
+	option = {
+		name = italianevents.6.b
+		ai_chance = { factor = 1}
+		create_wargoal= { 
+type = annex_everything 
+target = TUR
+}
+	}
+}
+##Event: The Germans Reject!
+country_event = {
+	id = italianevents.7
+	title = italianevents.7.title
+	desc = italianevents.7.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.7.a
+		ai_chance = { factor = 1}
+	}
+}
+##Event: Direct Control of The Vatican
+country_event = {
+	id = italianevents.8
+	title = italianevents.8.title
+	desc = italianevents.8.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.8.a
+		ai_chance = { factor = 1}
+		add_stability= -0.1
+add_ideas = ITA_autonomous_vatican
+	}
+	option = {
+		name = italianevents.8.b
+		ai_chance = { factor = 1}
+		add_timed_idea= { 
+idea = ITA_catholic_partisans 
+days = 635
+}
+	}
+}
+##Event: New Treaty with the Church
+country_event = {
+	id = italianevents.9
+	title = italianevents.9.title
+	desc = italianevents.9.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+##Event: Celebrating the Victory!
+country_event = {
+	id = italianevents.10
+	title = italianevents.10.title
+	desc = italianevents.10.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+}
+##Event: Renew The Pact of Steel?
+country_event = {
+	id = italianevents.11
+	title = italianevents.11.title
+	desc = italianevents.11.desc
+	picture = GFX_event_test
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = italianevents.11.a
+		ai_chance = { factor = 1}
+		diplomatic_relation = { country = ITA relation = non_aggression_pact }
+add_opinion_modifier = { target = ITA modifier = pact_of_steel }
+	}
+	option = {
+		name = italianevents.11.b
+		ai_chance = { factor = 1}
+		ITA = { add_opinion_modifier = { target = GER modifier = ITA_refused_alliance } }
+	}
+}

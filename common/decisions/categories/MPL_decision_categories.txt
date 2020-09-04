@@ -1,0 +1,15 @@
+################
+##### MPL ######
+################
+
+angolan_civil_war_MPL = {
+	picture = generic_border_conflicts
+	icon = GFX_KKK
+	allowed = {
+		tag = MPL
+	}	
+	
+	visible = {
+		tag = MPL
+	}
+}

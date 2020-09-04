@@ -1,0 +1,7 @@
+on_actions = {
+	
+		effect = {
+		country_event = commieiraq.1
+       }
+	}
+}

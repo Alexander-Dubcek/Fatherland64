@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		SAF_advisors = {
+			picture = lok_poa
+			removal_cost = -1
+			
+			modifier = {
+                army_org = 5
+                planning_speed = 0.10
+                training_time_army_factor = -0.1
+			}
+		}
+		FRF_white_minority = {
+			picture = lok_poa
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.10	
+			}
+		}
+		
+		GMA_independence = {
+			picture = GFX_idea_GMA_independence
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01	
+			}
+		}
+		
+		SAF_segregation = {
+			picture = GFX_idea_GMA_independence
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		
+		communist_insurgents = {
+			picture = GFX_idea_GMA_independence
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01
+			}
+		}
+	}
+}

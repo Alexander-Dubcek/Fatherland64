@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	trade_influence_1 = {
+		value = 20
+		trade = yes
+	}
+}

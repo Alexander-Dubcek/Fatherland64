@@ -1,0 +1,36 @@
+state={
+	id=718
+	name="STATE_718"
+	
+	state_category = town
+
+	resources={
+		rubber=15
+		steel = 20
+	}
+
+	history={
+		owner = GMA
+		victory_points = {
+			1950 15
+		}
+		victory_points = {
+			4941 3
+		}
+		victory_points = {
+			1181 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+		}
+		add_core_of = GMA
+		add_core_of = COG
+	}
+
+	provinces={
+		1181 1950 4201 4941 7161 10766 12783 12847 13176 
+	}
+	manpower=2366783
+	buildings_max_level_factor=1.000
+}

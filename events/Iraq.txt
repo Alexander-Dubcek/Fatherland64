@@ -1,0 +1,240 @@
+﻿###########################
+# Iraqi Events			  #
+###########################
+
+add_namespace = iraq
+
+#  Test
+country_event = {
+	id = iraq.1
+	title = iraq.1.t
+	desc = iraq.1.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+		date >1965.4.10
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = iraq.1.a
+		hidden_effect = {
+			ICP = {
+				country_event = { id = iraq.3 }
+			}
+			news_event = { id = news.12 }
+			ICP = { add_state_core = 291 }
+			ICP = { add_state_core = 811 }
+			ISH = { add_state_core = 809 }
+			ISH = { transfer_state = 809 }
+			ICP = { transfer_state = 291 }
+			ICP = { transfer_state = 811 }
+			KUR = { transfer_state = 808 }
+
+			ISH = {
+				declare_war_on= { 
+					target = IRQ
+					type = civil_war
+				}
+			}
+			ISH = {
+				declare_war_on= { 
+					target = ICP
+					type = civil_war 
+				}
+			}
+			ISH = {
+				declare_war_on= { 
+					target = KUR
+					type = civil_war 
+				}
+			}
+			ICP = {
+				declare_war_on= { 
+					target = IRQ
+					type = civil_war
+				}
+			}
+			KUR = {
+				declare_war_on= { 
+					target = IRQ
+					type = civil_war
+				}
+			}
+			IRQ = {
+				declare_war_on= { 
+					target = ICP
+					type = civil_war
+				}
+			}
+			IRQ = {
+				declare_war_on= { 
+					target = KUR
+					type = civil_war
+				}
+			}
+			IRQ = {
+				load_oob = "IRQ_Civil_war"
+			}
+			
+			ISH = {
+				load_oob = "ISH_Independence"
+			}
+			ICP = {
+				load_oob = "ICP_Independence"
+			}
+			KUR = {
+				load_oob = "KUR_Independence"
+			}
+		}
+	}
+}
+
+#  Test
+country_event = {
+	id = iraq.2
+	title = iraq.2.t
+	desc = iraq.2.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = iraq.2.a
+		hidden_effect = {
+			SYR = { transfer_state = 554 }
+			SYR = { transfer_state = 816 }
+			SYR = { transfer_state = 817 }
+			JOR = { transfer_state = 455 }
+			LEB = { transfer_state = 553 }
+
+			SYR = {
+				declare_war_on= { 
+					target = ITM
+					type = annex_everything
+				}
+			}
+			LEB = {
+				declare_war_on= { 
+					target = ITM
+					type = annex_everything 
+				}
+			}
+			SYR = {
+				load_oob = "SYR_Independence"
+			}
+			LEB = {
+				load_oob = "LEB_Independence"
+			}
+		}
+	}
+}
+
+#  Test
+country_event = {
+	id = iraq.3
+	title = iraq.3.t
+	desc = iraq.3.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = ICP
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = iraq.3.a
+		hidden_effect = {
+			ICP = { add_state_core = 812 }
+			ICP = { add_state_core = 676 }
+			ICP = { add_state_core = 810 }
+			ICP = { add_state_core = 675 }
+			ICP = { add_state_core = 809 }
+			KUR = { add_state_core = 813 }
+			ISH = { add_state_core = 812 }
+			ISH = { add_state_core = 676 }
+			ISH = { add_state_core = 810 }
+			ISH = { add_state_core = 675 }
+			ISH = { add_state_core = 809 }
+			ISH = { add_state_core = 813 }
+			ISH = { add_state_core = 291 }
+			ISH = { add_state_core = 811 }
+		}
+	}
+}
+
+country_event = {
+	id = iraq.4
+	title = iraq.4.t
+	desc = iraq.4.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = iraq.4.a
+			ICP = {
+				country_event = { id = commieiraq.1 }
+			}
+	}
+	
+	
+	
+}
+
+#Gas Attack Succeedes
+country_event = {
+	id = iraq.5
+	title = iraq.5.t
+	desc = iraq.5.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+	name = iraq.5.a
+		subtract_from_variable = { var = kurd_power value = 2 }
+	}
+	
+}
+
+#Gas Attack Fails
+country_event = {
+	id = iraq.6
+	title = iraq.6.t
+	desc = iraq.6.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	
+	is_triggered_only = yes
+	fire_only_once = no
+
+	option = {
+	name = iraq.6.a
+		add_days_mission_timeout = {
+			mission = IRQ_kurd_timer
+			days = -20
+		}
+	}
+	
+}

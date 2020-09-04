@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_goal_abduls_rule"
+		texturefile = "gfx/interface/goals/goal_abduls_rule.dds"
+	}
+
+}

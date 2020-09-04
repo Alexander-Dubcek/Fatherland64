@@ -1,0 +1,22 @@
+state={
+	id=680
+	name="STATE_680"
+	manpower = 546110
+	
+	state_category = wasteland
+
+	history={
+		owner = ITM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ITM
+		add_core_of = SYR
+
+	}
+
+
+	provinces={
+		901 2013 7513 10383 12316 13251 13255
+	}
+}

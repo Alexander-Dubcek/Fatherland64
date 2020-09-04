@@ -1,0 +1,118 @@
+﻿###########################
+# Italian Events		 #
+###########################
+
+add_namespace = eastaf
+
+# Test
+country_event = {
+	id = eastaf.1
+	title = eastaf.1.t
+	desc = eastaf.1.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = eastaf.1.a
+		hidden_effect = {
+			OMO = { add_state_core = 820 }
+			ETH = { transfer_state = 821 }
+			ETH = { transfer_state = 819 }
+			OMO = { transfer_state = 820 }
+			ERI = { transfer_state = 822 }
+			SOM = { transfer_state = 559 }
+
+			OMO = {
+				declare_war_on= { 
+					target = ITF
+					type = civil_war
+				}
+			}
+			OMO = {
+				declare_war_on= { 
+					target = ETH
+					type = civil_war 
+				}
+			}
+			ETH = {
+				declare_war_on= { 
+					target = ITF
+					type = civil_war 
+				}
+			}
+			SOM = {
+				declare_war_on= { 
+					target = ITF
+					type = civil_war
+				}
+			}
+			ERI = {
+				declare_war_on= { 
+					target = ITF
+					type = civil_war
+				}
+			}
+			
+			OMO = {
+				load_oob = "OMO_Independence"
+			}
+			ETH = {
+				load_oob = "ETH_Independence"
+			}
+			ERI = {
+				load_oob = "ERI_Independence"
+			}
+			SOM = {
+				load_oob = "SOM_Independence"
+			}
+		}
+	}
+}
+
+#  Test
+country_event = {
+	id = eastaf.2
+	title = eastaf.2.t
+	desc = eastaf.2.d
+	picture = GFX_kkk_march_peaceful
+	
+	trigger = {
+		tag = IRQ
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = eastaf.2.a
+		hidden_effect = {
+			SUD = { add_state_core = 823 }
+			ANY = { add_state_core = 825 }
+			SUD = { transfer_state = 823 }
+			ANY = { transfer_state = 825 }
+
+			SUD = {
+				declare_war_on= { 
+					target = ITF
+					type = annex_everything
+				}
+			}
+			ANY = {
+				declare_war_on= { 
+					target = ITF
+					type = annex_everything 
+				}
+			}
+			SUD = {
+				load_oob = "SUD_Independence"
+			}
+			ANY = {
+				load_oob = "ANY_Independence"
+			}
+		}
+	}
+}

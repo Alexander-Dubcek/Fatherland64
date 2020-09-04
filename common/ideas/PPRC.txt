@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		PRC_UN_new = {
+			picture = GFX_state_economy
+			cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.10
+				trade_laws_cost_factor = -0.25
+				democratic_acceptance = 50
+			}
+		}
+		PRC_New_Chinese_Policy_new = {
+			picture = GFX_state_economy
+			cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+				industry_air_damage_factor = 0.3
+			}
+		}
+		PRC_New_Chinese_Policy_newgood = {
+			picture = GFX_state_economy
+			cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.2
+				consumer_goods_factor = -0.03
+				production_factory_efficiency_gain_factor = 0.05
+				industry_air_damage_factor = 0.1
+			}
+		}
+		PRC_New_Chinese_Policy = {
+			picture = GFX_state_economy
+			cost = -1
+			
+			modifier = {
+				defence = 0.1
+				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industry_air_damage_factor = 0.2
+			}
+		}
+		PRC_autarky = {
+			picture = GFX_state_economy
+			cost = -1
+			
+			modifier = {
+				ai_badass_factor = 0.02
+				consumer_goods_factor = -0.15
+				ai_focus_defense_factor = 0.5
+				trade_laws_cost_factor = 0.5
+				trade_opinion_factor = -0.25
+			}
+		}
+	}
+}

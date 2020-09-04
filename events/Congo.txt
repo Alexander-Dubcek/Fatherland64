@@ -1,0 +1,311 @@
+﻿###########################
+# Congolese Events
+###########################
+
+add_namespace = congo
+
+#Congo Republic Rebels
+country_event = {
+	id = congo.1
+	title = congo.1.t
+	desc = congo.1.d
+	picture = GFX_Neto_Exiled
+	
+	trigger = {
+		tag = GMA
+		date >1965.6.4
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.1.a
+		remove_ideas = GMA_independence
+		GER = {
+			remove_from_faction = GMA
+			end_puppet = GMA
+		}
+		COG = { transfer_state = 538 }
+		COG = { transfer_state = 718 }
+		COG = { transfer_state = 833 }
+		COG = { transfer_state = 831 }
+		COG = {
+			load_oob = "COG_1964"
+		}
+		COG = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Congo Crisis Simba
+country_event = {
+	id = congo.2
+	title = congo.2.t
+	desc = congo.2.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = COG
+		has_country_flag = simbas_armed
+		has_country_flag = pierre_returned
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.2.a
+		SBA = { add_state_core = 831 }
+		SBA = { transfer_state = 831 }	
+		SBA = {
+			load_oob = "SBA_1964"
+		}
+		SBA = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = COG
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Congo Crisis Katanga
+country_event = {
+	id = congo.3
+	title = congo.3.t
+	desc = congo.3.d
+	picture = GFX_Tshombe_Returns
+	
+	trigger = {
+		tag = COG
+		has_country_flag = tshombe_returns
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.3.a
+		KGA = { add_state_core = 827 }
+		KGA = { transfer_state = 827 }
+		KGA = {
+			load_oob = "KGA_1964"
+		}		
+		KGA = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+			declare_war_on = {
+				target = COG
+				type = civil_war
+			}
+			declare_war_on = {
+				target = SBA
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Tshombe Returns to Congo
+country_event = {
+	id = congo.4
+	title = congo.4.t
+	desc = congo.4.d
+	picture = GFX_Tshombe_Returns
+	
+	trigger = {
+		tag = COG
+		date >1965.9.4
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.4.a
+		set_country_flag = tshombe_returns
+	}
+}
+
+#Simbas Target Bases
+country_event = {
+	id = congo.5
+	title = congo.5.t
+	desc = congo.5.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = GMA
+		date >1965.6.4
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+	name = congo.5.a
+		set_country_flag = simbas_armed
+	}
+}
+
+#Pierre Returns
+country_event = {
+	id = congo.6
+	title = congo.6.t
+	desc = congo.6.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = GMA
+		date >1965.9.4
+	}
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.6.a
+		set_country_flag = pierre_returned
+	}
+}
+
+#Rwanda Rises up
+country_event = {
+	id = congo.7
+	title = congo.7.t
+	desc = congo.7.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = GMA
+		date >1965.11.4
+		has_country_flag = simbas_armed
+		has_country_flag = pierre_returned
+	}
+	
+	mean_time_to_happen = {
+		days = 120
+	}
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.7.a
+		RWA = { transfer_state = 768 }
+		RWA = { 
+			load_oob = "RWA_1964"
+		}
+		RWA = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Burundi Rises up
+country_event = {
+	id = congo.8
+	title = congo.8.t
+	desc = congo.8.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = GMA
+		date >1965.11.4
+		has_country_flag = simbas_armed
+		has_country_flag = pierre_returned
+	}
+	
+	mean_time_to_happen = {
+		days = 130
+	}
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.8.a
+		BRD = { transfer_state = 769 }
+		BRD = { 
+			load_oob = "BRD_1964"
+		}
+		BRD = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Kasai Rises up
+country_event = {
+	id = congo.9
+	title = congo.9.t
+	desc = congo.9.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = COG
+		has_country_flag = tshombe_returns
+	}
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.9.a
+		SKA = { add_state_core = 832 }
+		SKA = { transfer_state = 832 }
+		SKA = { 
+			load_oob = "SKA_1964"
+		}
+		SKA = {
+			declare_war_on = {
+				target = GMA
+				type = civil_war
+			}
+		}
+		SKA = {
+			declare_war_on = {
+				target = COG
+				type = civil_war
+			}
+		}
+		SKA = {
+			declare_war_on = {
+				target = SBA
+				type = civil_war
+			}
+		}
+	}
+}
+
+#Stanleyville Massacre
+country_event = {
+	id = congo.10
+	title = congo.10.t
+	desc = congo.10.d
+	picture = GFX_Simbas
+	
+	trigger = {
+		tag = COG
+		has_country_flag = tshombe_returns
+	}
+	
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+	name = congo.10.a
+
+	}
+}

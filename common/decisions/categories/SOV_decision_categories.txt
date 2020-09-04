@@ -1,0 +1,11 @@
+war_against_soviets_sov = {
+	picture = generic_border_conflicts
+	icon = border_conflicts
+	allowed = {
+		tag = SOV
+	}	
+	
+	visible = {
+		tag = SOV
+	}
+}

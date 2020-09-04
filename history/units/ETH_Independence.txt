@@ -1,0 +1,98 @@
+﻿division_template = {
+	name = "Yeḥits’Anati Kifili"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+  		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+
+	}
+}
+
+units = {
+	division= {	
+		name = "1 nya Yeḥits’Anati Kifili"
+		location = 12856
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "2 nya Yeḥits’Anati Kifili"
+		location = 13259
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "3 nya Yeḥits’Anati Kifili"
+		location = 7912
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "4 nya Yeḥits’Anati Kifili"
+		location = 2009
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "5 nya Yeḥits’Anati Kifili"
+		location = 13260
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "6 nya Yeḥits’Anati Kifili"
+		location = 13256
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "7 nya Yeḥits’Anati Kifili"
+		location = 13257
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "8 nya Yeḥits’Anati Kifili"
+		location = 4995
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "9 nya Yeḥits’Anati Kifili"
+		location = 12812
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+	division= {	
+		name = "10 nya Yeḥits’Anati Kifili"
+		location = 12757
+		division_template = "Yeḥits’Anati Kifili"
+		start_experience_factor = 0.1
+
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 5000
+                producer = ITA
+	}
+}

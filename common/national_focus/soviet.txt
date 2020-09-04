@@ -1,0 +1,94 @@
+﻿focus_tree = {
+	id = soviet_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+
+	focus = {
+		id = SOV_22nd_congress
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 5
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SOV_state_of_the_union
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SOV_state_of_the_army
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 25
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SOV_mechanization
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	
+	focus = {
+		id = SOV_industrialization
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+}
