@@ -190,7 +190,7 @@ technologies = {
 		}
 		
 		categories = {
-			cat_safe_descent
+			spacefaring_tech
 		}
 	}
 	
