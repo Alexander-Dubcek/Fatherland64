@@ -1,16 +1,15 @@
 autonomy_state = {
 	id = autonomy_reichsprotectorate
-	
-	default = yes
-	is_puppet = yes
+
+	is_puppet = no
 	
 	min_freedom_level = 0.5
 	
 	manpower_influence = 0.7
 	
 	rule = {
-		can_not_declare_war = yes
-		can_decline_call_to_war = no
+		can_not_declare_war = no
+		can_decline_call_to_war = yes
 		can_be_spymaster = no
 		contributes_operatives = no
 		can_create_collaboration_government = no

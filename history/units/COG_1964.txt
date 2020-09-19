@@ -15,10 +15,7 @@ division_template = {
 		infantry = { x = 2 y = 2 }
 	}
 	support = {
-		anti_air = { x = 0 y = 0 } 		
-		engineer = { x = 0 y = 1 } 	
-		artillery = { x = 0 y = 2 } 
-		anti_tank = { x = 0 y = 3 } 
+ 
 	}
 }
 
@@ -33,12 +30,6 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
 	}
 	support = {
 	
@@ -58,7 +49,7 @@ units = {
 	}			
 	division= {			
 		name = "2eme Infanterie Congolaise Libre"		
-		location = 8016
+		location = 13274
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
@@ -66,7 +57,7 @@ units = {
 	}
 	division= {			
 		name = "4eme Infanterie Congolaise Libre"		
-		location = 10766
+		location = 8016
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -74,102 +65,52 @@ units = {
 	}			
 	division= {			
 		name = "5eme Infanterie Congolaise Libre"		
-		location = 7161
+		location = 13279
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {			
 		name = "6eme Infanterie Congolaise Libre"		
-		location = 4941
+		location = 7219
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
 	}
 	division= {			
 		name = "7eme Infanterie Congolaise Libre"		
-		location = 1181
+		location = 13277
 		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {			
 		name = "1er Infanterie Katangaise Libre"		
-		location = 12783
+		location = 988
 		division_template = "Division de Milice"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {			
 		name = "2eme Infanterie Katangaise Libre"		
-		location = 8048
+		location = 10883
 		division_template = "Division de Milice"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {			
 		name = "3eme Infanterie Katangaise Libre"		
-		location = 12775
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	division= {			
-		name = "4eme Infanterie Katangaise Libre"		
-		location = 8016
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	division= {			
-		name = "8eme Infanterie Congolaise Libre"		
-		location = 7161
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	division= {			
-		name = "9eme Infanterie Congolaise Libre"		
-		location = 4941
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	division= {			
-		name = "13eme Infanterie Congolaise Libre"		
 		location = 12741
 		division_template = "Division de Milice"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	division= {			
-		name = "14eme Infanterie Congolaise Libre"		
-		location = 12824
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	division= {			
-		name = "15eme Infanterie Congolaise Libre"		
-		location = 7931
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {			
-		name = "16eme Infanterie Congolaise Libre"		
+		name = "4eme Infanterie Katangaise Libre"		
 		location = 10071
 		division_template = "Division de Milice"
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.6
-	}
-	division= {			
-		name = "21eme Infanterie Congolaise Libre"		
-		location = 10766
-		division_template = "Division de Milice"
-		start_experience_factor = 0.1
 		start_equipment_factor = 1
-
 	}
 }
 
@@ -209,3 +150,11 @@ instant_effect = {
 	}
 }
 ###################
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+                type = infantry_equipment_1
+                amount = 7000
+                producer = GMA
+	}
+}

@@ -14,9 +14,6 @@ state = {
 	history = {
 		owner = GMA
 		victory_points = {
-			9986 5
-		}
-		victory_points = {
 			191 1 
 		}
 		buildings = {
@@ -29,6 +26,6 @@ state = {
 	}
 
 	provinces = {	 
-		9986 10858 1929 1817 12907 1516 12795 1968 4515 191 13283 13282 2024 1731 
+		10858 1929 1817 12907 4515 191 13283 1731 
 	}
 }

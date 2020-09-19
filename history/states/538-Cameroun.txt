@@ -10,9 +10,6 @@ state={
 	}
 	history={
 		owner = GMA
-		victory_points = {
-			7219 10 
-		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -22,6 +19,6 @@ state={
 	}
 
 	provinces={
-		7219 8016 8048 10071 10951 12775 13277 13273 13274 13275 13285 13279 13284 13278
+		8048 10951 13275 13285 13284 13278
 	}
 }

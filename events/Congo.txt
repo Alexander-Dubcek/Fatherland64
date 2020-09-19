@@ -21,23 +21,21 @@ country_event = {
 	option = {
 	name = congo.1.a
 		remove_ideas = GMA_independence
-		GER = {
-			remove_from_faction = GMA
-			end_puppet = GMA
-		}
-		COG = { transfer_state = 538 }
-		COG = { transfer_state = 718 }
 		COG = { transfer_state = 833 }
-		COG = { transfer_state = 831 }
+		COG = { transfer_state = 835 }
+		COG = { transfer_state = 841 }
 		COG = {
 			load_oob = "COG_1964"
 		}
-		COG = {
+		GMA = {
 			declare_war_on = {
-				target = GMA
+				target = COG
 				type = civil_war
 			}
 		}
+		delete_unit_template_and_units = { division_template = "Deutsche Infanterie-Division" }
+		delete_unit_template_and_units = { division_template = "Afrikanische Infanterie-Division" }
+		load_oob = "GMA_civil_war"
 	}
 }
 
@@ -58,8 +56,8 @@ country_event = {
 
 	option = {
 	name = congo.2.a
-		SBA = { add_state_core = 831 }
-		SBA = { transfer_state = 831 }	
+		SBA = { add_state_core = 840 }
+		SBA = { transfer_state = 840 }	
 		SBA = {
 			load_oob = "SBA_1964"
 		}

@@ -140,55 +140,55 @@ create_import = {
 
 	set_autonomy = {
 		target = SLO
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = NOR
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = OST
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = UKR
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = HOL
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}	
 	set_autonomy = {
 		target = POL
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = CZE
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = MOS
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}	
 	set_autonomy = {
 		target = GMA
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = RMA
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = BE1
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}	
 	set_autonomy = {
 		target = EGY
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = CAU
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 
 	set_global_flag = end_of_czechoslovakia

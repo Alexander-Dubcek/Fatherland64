@@ -93,11 +93,11 @@ if = {
 
 	set_autonomy = {
 		target = ITF
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = ITM
-		autonomous_state = autonomy_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	
 1939.1.1 = {
