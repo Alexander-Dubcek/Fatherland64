@@ -1,0 +1,26 @@
+state = {
+	id=849
+	name="Provincia di Nordest"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ITF
+		add_core_of = ITF
+		add_core_of = KEN
+		add_core_of = SOM
+		
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		2066 8133 12927 10761 10976 
+	}
+}

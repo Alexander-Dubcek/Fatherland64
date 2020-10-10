@@ -1,0 +1,28 @@
+state = {
+	id=846
+	name="Amman"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = GER
+		add_core_of = GER
+		add_core_of = JOR
+		victory_points = {
+			7151 1 
+		}
+
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		4115 4017 10089 7151 7170 
+	}
+}

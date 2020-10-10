@@ -1,0 +1,26 @@
+state = {
+	id=850
+	name="Lagan"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = CAU
+		add_core_of = CAU
+		add_core_of = MOS
+		add_core_of = SOV
+		
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		 3726 6758 6760 11706 9735 11579 9440 3461 3487 
+	}
+}

@@ -6,7 +6,8 @@ state={
 	state_category=rural
 
 	history={
-		owner = MOS
+		owner = LOK
+		add_core_of = LOK
 		add_core_of = MOS
 		buildings = {
 			infrastructure = 2

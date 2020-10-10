@@ -6,10 +6,12 @@ state=
 	
 	state_category = enclave
 	
-	history=
-	{
+	history={
 		owner = SPR
-		add_core_of = EQG
+		add_core_of = SPR
+		victory_points = {
+			5139 1 
+		}
 		victory_points = {
 			1903 1 
 		}
@@ -23,7 +25,7 @@ state=
 			}
 		}
 	}
-	provinces=
-	{
-1903 8244 	}
+	provinces={ 1903 8244 5139 
+	
+	}
 }

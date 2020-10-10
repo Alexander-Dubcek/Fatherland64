@@ -1,0 +1,25 @@
+state = {
+	id=844
+	name="Svizzera"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ITA
+		add_core_of = ITA
+		add_core_of = SWI
+
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		9587 3612 
+	}
+}

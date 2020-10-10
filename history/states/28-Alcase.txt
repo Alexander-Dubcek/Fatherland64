@@ -11,11 +11,12 @@ state={
 
 	history={
 		owner = GER
-		#victory_points = { 6529 1 }
-		#victory_points = { 549 1 }
+		victory_points = { 6529 1 }
+		victory_points = { 549 1 }
 		victory_points = { 678 5 }
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
+		victory_points = { 11516 5 }
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
@@ -61,6 +62,6 @@ state={
 	}
 
 	provinces={
-		549 678 1346 3629 6529 9503 9559 11502 
+		549 678 1346 3629 6529 9503 9559 11502 521 11516 5291 
 	}
 }

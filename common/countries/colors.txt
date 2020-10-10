@@ -4,6 +4,14 @@ GER = {
 	color = rgb { 85 84 84 }
 	color_ui = rgb { 85 84 84 }
 }
+RKB = {
+	color = rgb { 85 84 84 }
+	color_ui = rgb { 85 84 84 }
+}
+RKN = {
+	color = rgb { 85 84 84 }
+	color_ui = rgb { 85 84 84 }
+}
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }

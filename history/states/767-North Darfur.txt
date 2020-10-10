@@ -8,7 +8,9 @@ state=
 	impassable = yes
 	
 	history= {
-		owner = ITF
+		owner = EGY
+		add_core_of = EGY
+		add_claim_by = ITF
 		buildings = {
 			infrastructure = 0
 		}

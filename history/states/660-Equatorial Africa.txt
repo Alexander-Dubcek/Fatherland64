@@ -9,9 +9,8 @@ state={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = FRF
-		add_core_of = FRF
-		add_core_of = CAR
+		owner = GMA
+		add_core_of = GMA
 		victory_points = {
 			12830 1
 		}
@@ -22,6 +21,6 @@ state={
 	}
 
 	provinces={
-		1974 3165 5084 8078 11108 12719 12830 11012
+		1974 3165 5084 11108 12719 12830 
 	}
 }

@@ -10,7 +10,7 @@ state={
 	}
 	history={
 		owner = POR
-		add_core_of = GNB
+		add_core_of = POR
 		victory_points = {
 			12891 1
 		}
@@ -23,6 +23,6 @@ state={
 	}
 
 	provinces={
-		12747 12891 
+		12747 12891 12858 
 	}
 }

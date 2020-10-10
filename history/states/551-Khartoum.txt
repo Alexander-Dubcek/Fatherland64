@@ -5,12 +5,13 @@ state={
 	
 	state_category = rural
 	history = {
-		owner = ITF
+		owner = EGY
+		add_core_of = EGY
+		add_claim_by = ITF
 		buildings = {
 			infrastructure = 2
 		}
 
-		add_core_of = ITF
 	}
 	provinces={
 	    4963 8105 4138 12836

@@ -1,0 +1,29 @@
+state = {
+	id=848
+	name="Jubaland"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ITF
+		add_core_of = ITF
+		add_core_of = KEN
+		add_core_of = SOM
+		
+		buildings = {
+			infrastructure = 4
+			12941 = {
+				naval_base = 2
+			}
+		}
+	
+	}
+
+	provinces = {
+		11014 12941 
+	}
+}

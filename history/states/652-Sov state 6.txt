@@ -6,7 +6,9 @@ state={
 	}
 
 	history={
-		owner = LOK
+		owner = MOS
+		add_core_of = MOS
+		add_core_of = SOV
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -24,8 +26,6 @@ state={
 		victory_points = {
 			10299 5
 		}
-		add_core_of = LOK
-		add_core_of = SOV
 
 	}
 

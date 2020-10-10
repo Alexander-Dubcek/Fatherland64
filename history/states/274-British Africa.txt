@@ -3,8 +3,8 @@ state={
 	name="STATE_274"
 
 	history={
-		owner = GMA
-		add_core_of = GHA
+		owner = ENG
+		add_core_of = ENG
 		victory_points = {
 			10862 1 
 		}
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		8039 8096 10862 12742 12785 12787 13136 
+		8039 8096 10862 12742 12787 13136 
 	}
 	manpower=3163600
 	buildings_max_level_factor=1.000

@@ -1,0 +1,25 @@
+state = {
+	id=845
+	name="Jura"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		add_core_of = SWI
+
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		6683 9622 13124 6666 
+	}
+}

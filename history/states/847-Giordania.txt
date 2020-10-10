@@ -1,0 +1,25 @@
+state = {
+	id=847
+	name="Giordania"
+	manpower = 250000
+	
+	resources={
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ITM
+		add_core_of = ITM
+		add_core_of = JOR
+		
+		buildings = {
+			infrastructure = 4
+		}
+	
+	}
+
+	provinces = {
+		4440 1544 4574 7001 
+	}
+}
